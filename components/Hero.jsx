@@ -2,12 +2,12 @@ import React from 'react'
 
 const Hero = () => {
   return (
-    <div className="flex flex-col lg:flex-row items-center justify-between h-fit md:pt-[140px] pt-[100px] overflow-hidden">
+    <div className="flex flex-col lg:flex-row items-start justify-between h-[90vh] md:pt-[140px] pt-[100px] overflow-hidden">
         <div className="z-10 w-fit max-w-5xl items-start justify-center font-mono text-sm flex flex-col lg:pl-24 pl-4 ">
           <span className="text-white text-4xl tracking-in-expand-more-delay">
             The
           </span>
-          <h1 className=" text-white w-fit md:text-9xl text-7xl  tracking-in-expand">
+          <h1 className=" text-white w-fit md:text-9xl text-7xl  tracking-in-expand text">
             Embrione
           </h1>
           <span className="text-white  text-1xl md:text-2xl pl-1 text-focus-in">

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -11,25 +11,24 @@
 }
 * {
   scroll-behavior: smooth;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --black-gradient: linear-gradient(
-    144.39deg,
-    #ffffff -278.56%,
-    #6d6d6d -78.47%,
-    #11101d 91.61%
-  );
-  --card-shadow: 0px 20px 100px -10px rgba(66, 71, 91, 0.1);
+      144.39deg,
+      #ffffff -278.56%,
+      #6d6d6d -78.47%,
+      #11101d 91.61%
+    );
+    --card-shadow: 0px 20px 100px -10px rgba(66, 71, 91, 0.1);
   }
 }
 
 body {
   color: rgb(var(--foreground-rgb));
   background: #000514;
-
 }
 .bg-blue-gradient {
   background: linear-gradient(
@@ -45,31 +44,47 @@ body {
 .blue__gradient {
   background: linear-gradient(180deg, rgba(188, 165, 255, 0) 0%, #214d76 100%);
   filter: blur(193px);
-
 }
+/* gradient animation */
 
 
+/* .gradient-text-animation {
+  background: linear-gradient(
+    90deg,
+    #00bfff,
+    #0033ff,
+    #0f0050,
+    #00d0ff
+  );
+  background-size: 400%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradient-text-animation 10s linear infinite;
+} */
 
 /* Animatoin classes */
 .tracking-in-expand {
-	-webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
-	        animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+  -webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1)
+    both;
+  animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1) both;
 }
 .tracking-in-expand-more-delay {
-	-webkit-animation: tracking-in-expand 1.4s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
-	        animation: tracking-in-expand 1.4s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+  -webkit-animation: tracking-in-expand 1.4s cubic-bezier(0.215, 0.61, 0.355, 1)
+    both;
+  animation: tracking-in-expand 1.4s cubic-bezier(0.215, 0.61, 0.355, 1) both;
 }
 .flicker-logo {
-	-webkit-animation: flicker-4 4s linear infinite both;
-	        animation: flicker-4 4s linear infinite both;
+  -webkit-animation: flicker-4 4s linear infinite both;
+  animation: flicker-4 4s linear infinite both;
 }
 .text-focus-in {
-	-webkit-animation: text-focus-in 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) 1.2s both;
-	        animation: text-focus-in 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) 1.2s both;
+  -webkit-animation: text-focus-in 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53)
+    1.2s both;
+  animation: text-focus-in 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) 1.2s both;
 }
 /* Animation Code Keyframes */
 
- @-webkit-keyframes tracking-in-expand {
+@-webkit-keyframes tracking-in-expand {
   0% {
     letter-spacing: -0.5em;
     opacity: 0;
@@ -94,7 +109,7 @@ body {
   }
 }
 
- @-webkit-keyframes flicker-4 {
+@-webkit-keyframes flicker-4 {
   0%,
   100% {
     opacity: 1;
@@ -251,27 +266,35 @@ body {
   }
 }
 
- @-webkit-keyframes text-focus-in {
+@-webkit-keyframes text-focus-in {
   0% {
     -webkit-filter: blur(12px);
-            filter: blur(12px);
+    filter: blur(12px);
     opacity: 0;
   }
   100% {
     -webkit-filter: blur(0px);
-            filter: blur(0px);
+    filter: blur(0px);
     opacity: 1;
   }
 }
 @keyframes text-focus-in {
   0% {
     -webkit-filter: blur(12px);
-            filter: blur(12px);
+    filter: blur(12px);
     opacity: 0;
   }
   100% {
     -webkit-filter: blur(0px);
-            filter: blur(0px);
+    filter: blur(0px);
     opacity: 1;
   }
 }
+/* @keyframes gradient-text-animation{
+  0%{
+  background-position: 100%;
+  }
+  100%{
+  background-position: 200%;
+  }
+  } */
