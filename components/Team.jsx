@@ -7,9 +7,16 @@ const Team = () => {
       <h1 className="text-white w-fit md:text-7xl text-5xl py-6">
         Meet The Team
       </h1>
-      <div className=" grid grid-cols-1 md:grid-cols-3 ">
+      <div className=" md:grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 space-x-4 flex flex-col items-center justify-center ">
         {domainDetails?.map((domain, index) => (
-          <DomainComponent index = {index} domain = {domain}/>
+          <DomainComponent
+            index={index}
+            domain={domain?.domainName}
+            domainHead1={domain?.domainHead1}
+            domainHead2={domain?.domainHead2}
+            domainHead1Photo={domain?.domainHead1Photo}
+            domainHead2Photo={domain?.domainHead2Photo}
+          />
         ))}
       </div>
     </div>

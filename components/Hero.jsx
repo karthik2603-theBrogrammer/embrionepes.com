@@ -16,7 +16,7 @@ const Hero = () => {
           CSE Vertical, PES University
         </span>
       </div>
-      <div className="z-10 w-screen items-center justify-center max-w-5xl lg:hidden flex relative bottom-8">
+      <div className="z-10 w-screen items-center justify-center max-w-5xl md:hidden flex relative bottom-8">
         <Lottie
           loop={true}
           animationData={vortex}
