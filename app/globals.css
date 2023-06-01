@@ -45,6 +45,41 @@ body {
   background: linear-gradient(180deg, rgba(188, 165, 255, 0) 0%, #214d76 100%);
   filter: blur(193px);
 }
+/* Swiper JS Styles */
+.mySwiper{
+  height: 100%;
+  width: 100%;
+}
+.swiper {
+  margin-top:5%;
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  padding: 5%;
+  text-align: center;
+  font-size: 18px;
+  background: transparent;
+  color: #ffffff;
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* gradient animation */
 
 

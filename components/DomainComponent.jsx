@@ -33,9 +33,9 @@ const DomainComponent = ({
       // viewport={{ amount: 0.2, once: true }}
       // variants={rightviewVariants}
       data-aos="fade-left"
-     data-aos-offset="500"
+     data-aos-offset="100"
      data-aos-duration="500"
-     data-aos-delay={((index%3)+1) * 100 }
+     data-aos-delay={((index%3)+1) * 5 }
     >
       <h2>{domainName}</h2>
       <div>
