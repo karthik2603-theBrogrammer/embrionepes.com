@@ -9,8 +9,9 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 
 // import required modules
-import { Pagination, Navigation } from "swiper";
+import { Autoplay, Pagination, Navigation } from "swiper";
 const PastEventsCarousel = ({ eventImagesArray }) => {
+  
   return (
     <Swiper
       slidesPerView={1}
@@ -20,9 +21,13 @@ const PastEventsCarousel = ({ eventImagesArray }) => {
         clickable: true,
       }}
       navigation={true}
-      modules={[Pagination, Navigation]}
+      modules={[Autoplay, Pagination, Navigation]}
       className="mySwiper"
-      autoplay={true}
+    //   onAutoplayTimeLeft={onAutoplayTimeLeft}
+      autoplay={{
+        delay: 2500,
+        disableOnInteraction: false,
+      }}
     >
       {eventImagesArray?.map((eventImage, index) => (
         <SwiperSlide>

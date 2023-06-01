@@ -16,6 +16,11 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
+    --outer-shadow: 
+    0 0 0.1vw 0.1vw #e0f7fa,
+    0 0 0.4vw 0.1vw #17c6d9,
+    0 0 0.1vw 0.1vw #011c68;
+
     --black-gradient: linear-gradient(
       144.39deg,
       #ffffff -278.56%,
@@ -78,6 +83,10 @@ body {
 .swiper {
   margin-left: auto;
   margin-right: auto;
+}
+
+.footer-outer-glow {
+  box-shadow: var(--outer-shadow);
 }
 
 /* gradient animation */

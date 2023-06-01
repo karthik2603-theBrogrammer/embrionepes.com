@@ -17,7 +17,7 @@ const PastEvents = () => {
 
   return (
     <div className="p-5 md:p-[110px] flex flex-col relative">
-      <h1 className="text-white w-fit md:text-7xl text-5xl py-6">
+      <h1 className="text-white md:text-7xl text-5xl py-6 text-center">
         Here's What We've conducted !
       </h1>
       <div className="flex flex-row flex-wrap h-fit w-[100%] items-center justify-center my-5 space-x-4  flex-1">

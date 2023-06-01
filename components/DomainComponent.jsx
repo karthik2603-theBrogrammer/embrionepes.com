@@ -27,7 +27,7 @@ const DomainComponent = ({
 }) => {
   return (
     <motion.div
-      className={`h-[300px] w-[250px] md:h-[400px] md:w-[300px] bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 text-gray-200 m-4  px-5 py-9 `}
+      className={`h-[300px] w-[250px] md:h-[350px] md:w-[300px] bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 text-gray-200 m-4  px-5 py-9 flex flex-col items-center justify-center `}
       // initial="off"
       // whileInView="on"
       // viewport={{ amount: 0.2, once: true }}
@@ -37,8 +37,8 @@ const DomainComponent = ({
      data-aos-duration="500"
      data-aos-delay={((index%3)+1) * 5 }
     >
-      <h2>{domainName}</h2>
-      <div>
+      <h2 className="mb-5 md:mb-9 text-2xl md:text-4xl ">{domainName}</h2>
+      <div className="flex flex-row space">
         <Image
           src={domainHead1Photo}
           alt="Domain-Head-1"
@@ -47,7 +47,7 @@ const DomainComponent = ({
         />
         <h3>{domainHead1}</h3>
       </div>
-      <div>
+      <div className="flex flex-row space-">
         <Image
           src={domainHead2Photo}
           alt="Domain-Head-1"

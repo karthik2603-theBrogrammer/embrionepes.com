@@ -11,7 +11,7 @@ const Team = () => {
         {domainDetails?.map((domain, index) => (
           <DomainComponent
             index={index}
-            domain={domain?.domainName}
+            domainName={domain?.domainName}
             domainHead1={domain?.domainHead1}
             domainHead2={domain?.domainHead2}
             domainHead1Photo={domain?.domainHead1Photo}
