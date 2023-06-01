@@ -18,12 +18,12 @@ const Footer = () => {
           <AiFillLinkedin size={25} className = {iconStyles} />
         </div>
         <p className="text-center w-fit">© All Rights Reserved 2023</p>
-        <p className="text-center">Made with ❣️ By Embrione WebDev Team</p>
+        <p className="text-center">Made with ❣️ By the <span className="gradient-text-animation">Embrione</span> WebDev Team</p>
       </div>
 
       <div className=" flex-col items-center justify-center self-center m-0 md:flex hidden w-fit">
-        <p className="text-center"> Vijit Kumar: </p>
-        <p className="text-center">Vishal Lodha: </p>
+        <p className="text-center"> Vijit Kumar:vijit@gmail.com </p>
+        <p className="text-center">Vishal Lodha: vishal@gmail.com </p>
       </div>
     </div>
   );

@@ -10,7 +10,7 @@ export default function LandingPage() {
       <Navbar />
       <Hero />
       <AboutUs />
-      {/* <Team /> */}
+      <Team />
       <PastEvents />
       <Footer/>
     </>

@@ -8,14 +8,25 @@ const AboutUs = () => {
         data-aos="zoom-in"
         data-aos-duration="700"
       />
-      <h1 className="text-white w-fit md:text-7xl text-5xl py-6">About Us</h1>
-      <p className="text-white text-1xl md:text-2xl text-justify">
-        The Embrione is a peer-to-peer based tech community, under the CSE
-        vertical of PES University, Bangalore. The club mainly focuses on:
+      <h1
+        className="text-white w-fit md:text-7xl text-5xl py-6 "
+        data-aos="zoom-in-up"
+        data-aos-duration="500"
+      >
+        About Us
+      </h1>
+      <p className="text-white text-1xl md:text-2xl text-justify " 
+      data-aos="zoom-in-down"
+      data-aos-duration="500"
+      data-aos-delay="200"
+
+      >
+        The <span className="gradient-text-animation">Embrione</span> is a peer-to-peer based tech community, under the CSE
+        vertical of PES University, Bangalore. The club mainly focuses on
         Providing a platform and opportunities for students to grow and develop
-        their skill sets. For students in the first and second years.
-        Beginner-friendly hackathons and other tech events. We bring together
-        fresh minds and give them the freedom to unleash their full potential.
+        their skill sets. The club focuses at students in the first and second years by organising
+        beginner-friendly hackathons and other such technical events. We bring together
+        fresh minds and give them a stage the freedom to unleash their full potential.
       </p>
     </div>
   );
