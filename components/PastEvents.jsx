@@ -24,7 +24,7 @@ const PastEvents = () => {
       <div className="flex flex-row flex-wrap h-fit w-[100%] items-center justify-center my-5 space-x-4  flex-1">
         {ClubEvents?.map((clubEvent, index) => (
           <span
-            className={`flex items-center justify-center text-white text-[60%] md:text-2xl  p-3 rounded-md cursor-pointer ${activeEvent === clubEvent?.eventName && 'bg-white text-blue-950'} transition ease-in-out duration-300`}
+            className={`flex items-center justify-center text-[60%] md:text-2xl  p-3 rounded-md cursor-pointer ${activeEvent === clubEvent?.eventName ? 'bg-white text-blue-950' : 'text-white'} transition ease-in-out duration-300`}
             key={index}
             onClick={() => {
               setActiveEvent(clubEvent?.eventName);

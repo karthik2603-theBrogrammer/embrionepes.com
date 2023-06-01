@@ -5,16 +5,16 @@ import { motion } from "framer-motion";
 import { slideIn, fadeIn } from "@/utils/framermotion";
 
 const rightviewVariants = {
-	on: {
-		opacity: 1,
-		x: "0%",
-		transition: { duration: 0.6, ease: "easeInOut" },
-	},
-	off: {
-		opacity: 0,
-		x: "50%",
-		transition: { duration: 0.6, ease: "easeInOut" },
-	},
+  on: {
+    opacity: 1,
+    x: "0%",
+    transition: { duration: 0.6, ease: "easeInOut" },
+  },
+  off: {
+    opacity: 0,
+    x: "50%",
+    transition: { duration: 0.6, ease: "easeInOut" },
+  },
 };
 
 const DomainComponent = ({
@@ -28,10 +28,14 @@ const DomainComponent = ({
   return (
     <motion.div
       className={`h-[300px] w-[250px] md:h-[400px] md:w-[300px] bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 text-gray-200 m-4  px-5 py-9 `}
-      initial="off"
-			whileInView="on"
-			viewport={{ amount: 0.2, once: true }}
-			variants={rightviewVariants}      
+      // initial="off"
+      // whileInView="on"
+      // viewport={{ amount: 0.2, once: true }}
+      // variants={rightviewVariants}
+      data-aos="fade-left"
+     data-aos-offset="500"
+     data-aos-duration="500"
+     data-aos-delay={((index%3)+1) * 100 }
     >
       <h2>{domainName}</h2>
       <div>
