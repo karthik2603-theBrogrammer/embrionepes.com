@@ -4,18 +4,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { slideIn, fadeIn } from "@/utils/framermotion";
 
-const rightviewVariants = {
-  on: {
-    opacity: 1,
-    x: "0%",
-    transition: { duration: 0.6, ease: "easeInOut" },
-  },
-  off: {
-    opacity: 0,
-    x: "50%",
-    transition: { duration: 0.6, ease: "easeInOut" },
-  },
-};
+
 
 const DomainComponent = ({
   index,

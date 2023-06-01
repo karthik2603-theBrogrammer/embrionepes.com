@@ -16,10 +16,8 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --outer-shadow: 
-    0 0 0.1vw 0.1vw #e0f7fa,
-    0 0 0.4vw 0.1vw #17c6d9,
-    0 0 0.1vw 0.1vw #011c68;
+    --outer-shadow: 0 0 0.1vw 0.1vw #e0f7fa, 0 0 0.4vw 0.1vw #17c6d9,
+      0 0 0.1vw 0.1vw #011c68;
 
     --black-gradient: linear-gradient(
       144.39deg,
@@ -51,12 +49,12 @@ body {
   filter: blur(193px);
 }
 /* Swiper JS Styles */
-.mySwiper{
+.mySwiper {
   height: 100%;
   width: 100%;
 }
 .swiper {
-  margin-top:5%;
+  margin-top: 5%;
   width: 100%;
   height: 100%;
 }
@@ -91,20 +89,26 @@ body {
 
 /* gradient animation */
 
-
-/* .gradient-text-animation {
+.gradient-text-animation {
   background: linear-gradient(
     90deg,
-    #00bfff,
-    #0033ff,
-    #0f0050,
-    #00d0ff
+    #00fff6,
+    #00e5ff,
+    #00c8ff,
+    #00fff6,
+
+    #00a8ff,
+    #004eff,
+    #004eff,
+
+    #00fff6
+
   );
   background-size: 400%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: gradient-text-animation 10s linear infinite;
-} */
+  animation: gradient-text-animation 3s linear infinite;
+}
 
 /* Animatoin classes */
 .tracking-in-expand {
@@ -334,11 +338,11 @@ body {
     opacity: 1;
   }
 }
-/* @keyframes gradient-text-animation{
-  0%{
-  background-position: 100%;
+@keyframes gradient-text-animation {
+  0% {
+    background-position: 100%;
   }
-  100%{
-  background-position: 200%;
+  100% {
+    background-position: 200%;
   }
-  } */
+}

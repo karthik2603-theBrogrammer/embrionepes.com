@@ -43,7 +43,7 @@ const PastEvents = () => {
         </p>
       ) : (
         <div className="my-5">
-          <p className="text-white text-2xl md:text-6xl text-center my-6 ">
+          <p className="text-white text-2xl md:text-6xl text-center my-6 gradient-text-animation">
             {eventDetails?.eventName}
           </p>
           <p className="text-white text-1xl md:text-2xl   my-4 text-justify">

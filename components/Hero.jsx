@@ -5,7 +5,7 @@ import vortex from "../assets/blue-orbit.json";
 const Hero = () => {
   return (
     <div className="flex flex-col items-start justify-between h-[80vh] md:pt-[140px] pt-[100px] overflow-hidden">
-      <div className="z-10 w-fit max-w-5xl items-start justify-center font-mono text-sm flex flex-col lg:pl-24 pl-4 ">
+      <div className="z-10 w-fit max-w-5xl items-start justify-center font-mono text-sm flex flex-col lg:pl-24 pl-2 ">
         <span className="text-white text-4xl tracking-in-expand-more-delay xl:text-7xl">
           The
         </span>
@@ -16,7 +16,7 @@ const Hero = () => {
           CSE Vertical, PES University
         </span>
       </div>
-      <div className="z-10 w-screen items-center justify-center max-w-5xl md:hidden flex relative top-5">
+      <div className="z-10 w-screen items-center justify-center max-w-5xl md:hidden flex relative top-4">
         <Lottie
           loop={true}
           animationData={vortex}
