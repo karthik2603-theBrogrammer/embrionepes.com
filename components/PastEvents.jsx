@@ -26,22 +26,25 @@ const PastEvents = () => {
       </h1>
       <div className="flex flex-row flex-wrap h-fit w-[100%] items-center justify-center my-5 space-x-4  flex-1">
         {ClubEvents?.map((clubEvent, index) => (
-          <span
-            className={`flex items-center justify-center text-[60%] md:text-2xl  p-3 rounded-md cursor-pointer ${
-              activeEvent === clubEvent?.eventName
-                ? "bg-white text-blue-950"
-                : "text-white"
-            } transition ease-in-out duration-300`}
-            key={index}
-            onClick={() => {
-              setActiveEvent(clubEvent?.eventName);
-            }}
-            data-aos="fade-left"
+          <div
+            data-aos="zoom-in"
             data-aos-duration="500"
-            data-aos-delay={(index + 1) * 100}
+            data-aos-delay={(index + 1) * 300}
           >
-            {clubEvent?.eventName}
-          </span>
+            <span
+              className={`flex items-center justify-center text-[60%] md:text-2xl  p-3 rounded-md cursor-pointer ${
+                activeEvent === clubEvent?.eventName
+                  ? "bg-white text-blue-950"
+                  : "text-white"
+              } transition ease-in-out duration-300`}
+              key={index}
+              onClick={() => {
+                setActiveEvent(clubEvent?.eventName);
+              }}
+            >
+              {clubEvent?.eventName}
+            </span>
+          </div>
         ))}
       </div>
       {activeEvent === null ? (
@@ -65,7 +68,7 @@ const PastEvents = () => {
           />
         </div>
       )}
-      <div className=" z-0 blue__gradient absolute md:top-[-450px] md:right-[50px] h-[350px] w-[350px] md:h-[500px] md:w-[600px] hidden md:flex" />
+      <div className=" z-[-40] blue__gradient absolute  md:top-[-450px] md:right-[50px] h-[350px] w-[350px] md:h-[500px] md:w-[600px] hidden md:flex" />
     </div>
   );
 };
