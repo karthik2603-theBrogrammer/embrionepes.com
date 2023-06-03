@@ -13,7 +13,7 @@ const AboutUs = () => {
         data-aos="zoom-in-up"
         data-aos-duration="500"
       >
-        About Us lorem
+        About Us
       </h1>
       <p className="text-white text-1xl md:text-2xl text-justify " 
       data-aos="zoom-in-down"
