@@ -2,6 +2,7 @@
 import React, { useRef, useState } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
+import Image from "next/image";
 
 // Import Swiper styles
 import "swiper/swiper.min.css";
@@ -30,12 +31,8 @@ const PastEventsCarousel = ({ eventImagesArray }) => {
       }}
     >
       {eventImagesArray?.map((eventImage, index) => (
-        <SwiperSlide>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
-            optio laudantium est aliquid, accusantium doloremque? Blanditiis,
-            voluptatum, voluptate ut velit deleniti ducimus magni laboriosam
-          </p>
+        <SwiperSlide key={index} style = {{display:'flex', alignItems:'center',justifyContent:'center',position:'relative'}}>
+          <Image src={eventImage} alt = 'eventImage' height={20} width = {1500} style = {{alignSelf:'center',marginTop:'auto',objectFit:'contain'}}/>
         </SwiperSlide>
       ))}
     </Swiper>

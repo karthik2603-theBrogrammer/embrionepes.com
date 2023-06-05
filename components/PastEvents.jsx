@@ -22,7 +22,7 @@ const PastEvents = () => {
         data-aos="zoom-in-up"
         data-aos-duration="500"
       >
-        Here's What We've conducted !
+        Here's What We've conducted!
       </h1>
       <div className="flex flex-row flex-wrap h-fit w-[100%] items-center justify-center my-5 space-x-4  flex-1">
         {ClubEvents?.map((clubEvent, index) => (
@@ -63,9 +63,9 @@ const PastEvents = () => {
           <p className="text-white text-1xl md:text-2xl   my-4 text-justify">
             {eventDetails?.eventDescription}
           </p>
-          <PastEventsCarousel
+          {activeEvent !== 'Cipher' && (<PastEventsCarousel
             eventImagesArray={eventDetails?.eventImagesArray}
-          />
+          />)}
         </div>
       )}
       <div className=" z-[-40] blue__gradient absolute  md:top-[-450px] md:right-[50px] h-[350px] w-[350px] md:h-[500px] md:w-[600px] hidden md:flex" />

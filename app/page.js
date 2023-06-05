@@ -6,6 +6,7 @@ import PastEvents from "@/components/PastEvents";
 import Footer from "@/components/Footer/Footer";
 import Announcements from "@/components/Announcements/Announcements";
 import PreviousPartners from "@/components/Previous-Partners/PreviousPartners";
+import Statistics from "@/components/Statistics/Statistics";
 export default function LandingPage() {
   return (
     <>

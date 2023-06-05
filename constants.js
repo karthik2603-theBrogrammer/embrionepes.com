@@ -52,42 +52,85 @@ export const domainDetails = [
 
 export const ClubEvents = [
   {
-    eventName: "Cypher",
-    eventImagesArray: ["", "", "", ""],
-    eventDescription:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat temporibus deserunt maiores nihil laudantium enim accusamus mollitia quisquam quos, dicta voluptatibus iusto ipsam libero praesentium doloremque omnis consectetur explicabo voluptatem cum excepturi dolorum!",
-  },
-  {
     eventName: "Kodikon 1.0",
-    eventImagesArray: ["", "", "", ""],
+    eventImagesArray: [
+      "/Kodikon1/image1.jpeg",
+      "/Kodikon1/image2.jpeg",
+      "/Kodikon1/image3.jpeg",
+      "/Kodikon1/image4.jpeg",
+      "/Kodikon1/image5.jpeg",
+      "/Kodikon1/image6.jpeg",
+      "/Kodikon1/image7.jpeg",
+      "/Kodikon1/image8.jpeg",
+      "/Kodikon1/image9.jpeg",
+    ],
     eventDescription:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi eaque ab quam omnis, magni id perferendis nam illum quasi sint quod molestias enim consectetur tempora in ea amet quos consequuntur corporis. Dolorum aliquam sed non qui adipisci excepturi officiis dolor, molestias labore.",
+      "Kodikon 1.0, the first edition of our flagship 24-hour beginner-friendly hackathon, was conducted on the 10th and 11th of September 2022. The event was a roaring success with 800+ registrations, with 160+ participants, who were selected after a thorough vetting process. With prizes worth above 2.5 lakh, the students not only gained more experience and understanding of the technological world but also went home with exciting goodies.",
   },
   {
     eventName: "Kodikon 2.0",
-    eventImagesArray: ["", "", "", ""],
+    eventImagesArray: [
+      "/Kodikon2/image4.jpeg",
+      "/Kodikon2/image5.jpeg",
+      "/Kodikon2/image6.jpeg",
+      "/Kodikon2/image7.jpeg",
+      "/Kodikon2/image8.jpeg",
+      "/Kodikon2/image9.jpeg",
+      "/Kodikon2/image10.jpeg",
+      "/Kodikon2/image11.jpeg",
+      "/Kodikon2/image12.jpeg",
+    ],
     eventDescription:
-      "Officia voluptates at soluta maxime nulla corporis deleniti excepturi facilis, corrupti repellat quos libero, magni ullam distinctio quibusdam velit provident quo sunt porro quis esse dolorum unde doloremque? Esse, beatae natus? Culpa, suscipit. Distinctio quasi doloremque nostrum nesciunt ipsa ipsum debitis nihil asperiores explicabo culpa quaerat quae aperiam sit reprehenderit dolor, harum veritatis, a sunt accusantium laborum esse dicta vel. A, repudiandae! Consequuntur necessitatibus libero facilis maxime obcaecati, corporis praesentium quas optio ut provident consequatur molestias modi tenetur quia a inventore, cupiditate eveniet ab aliquid ducimus saepe. Tempora, sit iste fuga minima itaque optio ab voluptate, consectetur ratione perferendis blanditiis consequuntur doloremque provident sed aperiam, voluptas esse neque ipsa quasi dolorum voluptates exercitationem deleniti. Laborum cum quos mollitia iure reprehenderit dolorum voluptatum unde sunt, quaerat exercitationem ipsam possimus aliquid id eveniet repellendus aspernatur minima ipsum at architecto, incidunt debitis facere? In, veritatis. Recusandae cum dolor omnis eum temporibus quibusdam odit possimus in voluptatem eligendi assumenda excepturi, doloremque quaerat hic itaque obcaecati beatae id dolores deleniti minus similique! Veritatis illum id sint perspiciatis cupiditate vero ea voluptatibus molestiae, voluptate nisi. Nulla, vero.",
+      "Kodikon 2.0, a highly successful hackathon, was designed to encourage engineering students from the 2021-2025 batch to develop innovative solutions for real-world problems. With over 160 participants, the event promoted friendly competition while providing a beginner-friendly environment for students new to the tech world. Through peer-to-peer interaction, extensive mentoring, and feedback from tech professors, participants had the opportunity to enhance their skills, gain industry exposure, improve their soft skills, networking abilities, and technical expertise. The winners of this engaging hackathon received exciting prizes.",
+  },
+  {
+    eventName: "Cipher",
+    eventImagesArray: [
+      "/Cipher/image1.jpeg",
+      "/Cipher/image2.jpeg",
+      "/Cipher/image3.jpeg",
+      "/Cipher/image4.jpeg",
+    ],
+    eventDescription:
+      "Cipher, groundbreaking online coding challenge held on the Hackerrank platform in the month of August with over 350+ registrations. The event aimed to encourage and introduce individuals to the world of competitive coding and data structures and algorithms.",
+  },
+  {
+    eventName: "Spark",
+    eventImagesArray: [
+      "/Spark/image1.png",
+      "/Spark/image2.png",
+      "/Spark/image3.jpg",
+    ],
+    eventDescription:
+      "Spark offered individuals a unique opportunity to enhance their skills and knowledge in disruptive technologies like Machine Learning, Computer Vision, Blockchain, IoT, and Competitive Coding. With a 2-month blended learning format and participation from 300+ individuals and mentors, participants could work on projects and receive guidance to deepen their understanding. The program offered recognition certificates for mentoring and completion, while providing avenues for personal and professional growth in the field of disruptive technologies.",
   },
 ];
 
 export const announcements = [
   {
-    announcementName: "Embrione is Recruiting!",
+    announcementName: "Kodikon 2.0",
     announcementDescription:
-      "About Us Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, aut porro consequatur, adipisci voluptate inventore dolores modi vitae totam sit exercitationem laudantium?",
+      "Greetings PES! Registrations are OPEN! Put your thinking caps on and register asap. Link available below!",
     formLink: "googleFormLink",
-    dateOfEntry: 1685776338778,
-    postedBy:'ram singh',
+    dateOfEntry: 1677409496000,
+    postedBy: "shyam singh",
     postedByDomain: "WebDev Domain",
   },
   {
-    announcementName: "Kodikon 2.0",
+    announcementName: "Embrione is Recruiting!",
     announcementDescription:
-      "About Us Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, aut porro consequatur, adipisci voluptate inventore dolores modi vitae totam sit exercitationem laudantium?",
+      "We are expanding our team and it's your turn to be a part of it!✨ Application link available below! Register ASAP!",
     formLink: "googleFormLink",
-    dateOfEntry: 1685776338778,
-    postedBy:'shyam singh',
+    dateOfEntry: 1674299096000,
+    postedBy: "ram singh",
+    postedByDomain: "WebDev Domain",
+  },
+  {
+    announcementName: "Kodikon 1.0",
+    announcementDescription:'THE OFFICIAL ANNOUNCEMENT IS HERE!🔥💫 First of its kind: KodiKon - the 24 hour beginner-friendly hackathon, exclusively for the 2nd year students, is FINALLY HAPPENING!✨',
+    formLink: "googleFormLink",
+    dateOfEntry: 1661684696000,
+    postedBy: "ram singh",
     postedByDomain: "WebDev Domain",
   },
 ];
