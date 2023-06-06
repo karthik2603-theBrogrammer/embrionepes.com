@@ -2,7 +2,7 @@ import React from "react";
 
 const AboutUs = () => {
   return (
-    <div className="p-5 md:p-[110px] flex flex-col relative">
+    <div className="p-5 md:px-[130px] flex flex-col relative ">
       <div
         className="blue__gradient absolute md:top-[-450px] md:right-[600px] h-[300px] w-[250px] md:h-[500px] md:w-[600px] "
         // data-aos="zoom-in"
@@ -16,7 +16,7 @@ const AboutUs = () => {
         About Us
       </h1>
       <p
-        className="text-white text-1xl md:text-2xl text-justify "
+        className="text-white text-1xl md:text-2xl text-justify  "
         data-aos="zoom-in-down"
         data-aos-duration="500"
         data-aos-delay="200"

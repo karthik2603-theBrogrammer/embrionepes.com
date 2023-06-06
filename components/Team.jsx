@@ -16,12 +16,7 @@ const Team = () => {
           <DomainComponent
             index={index}
             domainName={domain?.domainName}
-            domainHead1={domain?.domainHead1}
-            domainHead2={domain?.domainHead2}
-            domainHead1Photo={domain?.domainHead1Photo}
-            domainHead2Photo={domain?.domainHead2Photo}
-            domainHead1Linkedin={domain?.domainHead1Linkedin}
-            domainHead2Linkedin={domain?.domainHead2Linkedin}
+            headsAndPhotos = {domain?.headsAndPhotos}
           />
         ))}
       </div>

@@ -1,52 +1,84 @@
 export const domainDetails = [
   {
     domainName: "Co-Founders",
-    domainHead1: "Vishal J Lodha",
-    domainHead2: "Vijit Kumar",
-    domainHead1Photo: "/",
-    domainHead2Photo: "/;",
+    headsAndPhotos: [
+      {
+        domainHead: "Vijit Kumar",
+        domainHeadPhoto: "/domiainHeadPhotos/vijit.jpg",
+        linkedInURL: "https://www.linkedin.com/in/vijit-kumar/",
+      },
+      {
+        domainHead: "Vishal J Lodha",
+        domainHeadPhoto: "/domiainHeadPhotos/vishal.jpeg",
+        linkedInURL: "https://www.linkedin.com/in/vishal-j-lodha",
+      },
+    ],
   },
   {
     domainName: "Logistics",
-    domainHead1: "Tanush J Lodha",
-    domainHead2: "Vijit Kumar",
-    domainHead1Photo: "/",
-    domainHead2Photo: "/;",
+    headsAndPhotos: [
+      {
+        domainHead: "Naresh Srinivas",
+        domainHeadPhoto: "/domiainHeadPhotos/naresh.jpg",
+        linkedInURL: "https://www.linkedin.com/in/naresh-srinivas-28a608215/",
+      },
+      {
+        domainHead: "Chaitra Upadhya",
+        domainHeadPhoto: "/domiainHeadPhotos/chaitra.jpeg",
+        linkedInURL: "https://www.linkedin.com/in/chaitra-upadhya-922426211/",
+      },
+    ],
   },
   {
-    domainName: "Marketing",
-    domainHead1: "Krishna Sudarshan",
-    domainHead2: "-",
-    domainHead1Photo: "/",
-    domainHead2Photo: "/;",
+    domainName: "Event Management",
+    headsAndPhotos: [
+      {
+        domainHead: "Punarv Dinakar",
+        domainHeadPhoto: "/domiainHeadPhotos/punarv.jpeg",
+        linkedInURL: "goto-linkedin",
+      },
+    ],
   },
   {
-    domainName: "Co-Founders",
-    domainHead1: "Vishal J Lodha",
-    domainHead2: "Vijit Kumar",
-    domainHead1Photo: "/",
-    domainHead2Photo: "/;",
+    domainName: "Marketing and Sponsorship",
+    headsAndPhotos: [
+      {
+        domainHead: "Swikrit Laxmishekhar",
+        domainHeadPhoto: "/domiainHeadPhotos/swikrit.jpg",
+        linkedInURL:
+          "https://www.linkedin.com/in/swikrit-laxmishekhar-546878225/",
+      },
+    ],
   },
   {
-    domainName: "Logistics",
-    domainHead1: "Tanush J Lodha",
-    domainHead2: "Vijit Kumar",
-    domainHead1Photo: "/",
-    domainHead2Photo: "/;",
+    domainName: "Hospitality",
+    headsAndPhotos: [
+      {
+        domainHead: "Rhea Sudheer",
+        domainHeadPhoto: "/domiainHeadPhotos/rhea.jpg",
+        linkedInURL: "https://www.linkedin.com/in/rhea-sudheer/",
+      },
+    ],
   },
   {
-    domainName: "Logistics",
-    domainHead1: "Tanush J Lodha",
-    domainHead2: "Vijit Kumar",
-    domainHead1Photo: "/",
-    domainHead2Photo: "/;",
+    domainName: "Design",
+    headsAndPhotos: [
+      {
+        domainHead: "Yogitha H K",
+        domainHeadPhoto: "/domiainHeadPhotos/yogitha.jpg",
+        linkedInURL: "https://www.linkedin.com/in/yogitha-h-k-63bb74222/",
+      },
+    ],
   },
   {
-    domainName: "Logistics",
-    domainHead1: "Tanush J Lodha",
-    domainHead2: "Vijit Kumar",
-    domainHead1Photo: "/",
-    domainHead2Photo: "/;",
+    domainName: "Operations",
+    headsAndPhotos: [
+      {
+        domainHead: "Harsh Verma",
+        domainHeadPhoto: "/domiainHeadPhotos/harsh.jpg",
+        linkedInURL: "https://www.linkedin.com/in/harsh-verma-857b801b9/",
+      },
+    ],
   },
 ];
 
@@ -127,10 +159,18 @@ export const announcements = [
   },
   {
     announcementName: "Kodikon 1.0",
-    announcementDescription:'THE OFFICIAL ANNOUNCEMENT IS HERE!🔥💫 First of its kind: KodiKon - the 24 hour beginner-friendly hackathon, exclusively for the 2nd year students, is FINALLY HAPPENING!✨',
+    announcementDescription:
+      "THE OFFICIAL ANNOUNCEMENT IS HERE!🔥💫 First of its kind: KodiKon - the 24 hour beginner-friendly hackathon, exclusively for the 2nd year students, is FINALLY HAPPENING!✨",
     formLink: "googleFormLink",
     dateOfEntry: 1661684696000,
     postedBy: "ram singh",
     postedByDomain: "WebDev Domain",
+  },
+];
+export const socialLinks = [
+  { social: "Instagram", url: "https://www.instagram.com/the_embrione.pesu/" },
+  {
+    social: "LinkedIn",
+    url: "https://www.linkedin.com/company/the-embrione/about/",
   },
 ];

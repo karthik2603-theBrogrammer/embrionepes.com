@@ -6,7 +6,7 @@ import PastEvents from "@/components/PastEvents";
 import Footer from "@/components/Footer/Footer";
 import Announcements from "@/components/Announcements/Announcements";
 import PreviousPartners from "@/components/Previous-Partners/PreviousPartners";
-import Statistics from "@/components/Statistics/Statistics";
+import ContactUs from "@/components/ContactUs/ContactUs";
 export default function LandingPage() {
   return (
     <>
@@ -17,6 +17,7 @@ export default function LandingPage() {
       <PastEvents />
       <PreviousPartners/>
       <Announcements/>
+      <ContactUs/>
       <Footer/>
     </>
   );

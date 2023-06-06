@@ -6,6 +6,7 @@ import { BsInstagram } from "react-icons/bs";
 import { HiOutlineMail } from "react-icons/hi";
 import { AiFillLinkedin } from "react-icons/ai";
 import { Tilt } from "react-tilt";
+import { socialLinks } from "@/constants";
 const defaultOptions = {
   reverse: false, // reverse the tilt direction
   max: 35, // max tilt rotation (degrees)
@@ -26,16 +27,25 @@ const Footer = () => {
       data-aos="fade-down"
       data-aos-duration="1000"
     >
-      <Tilt defaultOptions={defaultOptions}>
-        <div className="flex flex-col items-center justify-center">
-          <Image src={pesLogo} alt="PES-LOGO" height={200} width={200} />
-        </div>
-      </Tilt>
+      <a href="https://pes.edu/" target="_blank">
+        <Tilt defaultOptions={defaultOptions}>
+          <div className="flex flex-col items-center justify-center">
+            <Image src={pesLogo} alt="PES-LOGO" height={200} width={200} />
+          </div>
+        </Tilt>
+      </a>
+
       <div className="flex flex-col items-center justify-center w-fit md:mx-12 lg:mx-36">
         <div className="flex flex-row items-center justify-center space-x-5 w-fit h-fit mb-6">
-          <BsInstagram size={25} className={iconStyles} />
-          <HiOutlineMail size={25} className={iconStyles} />
-          <AiFillLinkedin size={25} className={iconStyles} />
+          <a href={socialLinks[0].url} target="_blank">
+            <BsInstagram size={23} className={iconStyles} />
+          </a>
+          <a>
+            <HiOutlineMail size={28} className={iconStyles} />
+          </a>
+          <a href={socialLinks[1]?.url} target = '_blank'>
+            <AiFillLinkedin size={26} className={iconStyles} />
+          </a>
         </div>
         <p className="text-center w-fit">© All Rights Reserved 2023</p>
         <p className="text-center">
@@ -45,7 +55,7 @@ const Footer = () => {
       </div>
 
       <div className=" flex-col items-center justify-center self-center m-0 md:flex hidden w-fit">
-        <p className="text-center"> Vijit Kumar:vijit@gmail.com </p>
+        <p className="text-center"> Vijit Kumar: vijitviku@gmail.com </p>
         <p className="text-center">Vishal Lodha: vishal@gmail.com </p>
       </div>
       <div className="blue__gradient absolute md:top-[-300px] md:left-[-100px] h-[350px] w-[350px] md:h-[400px] md:w-[450px] z-[-60] " />
