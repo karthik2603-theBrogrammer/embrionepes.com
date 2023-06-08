@@ -9,7 +9,7 @@ const Hero = () => {
         <span className="text-white text-4xl tracking-in-expand-more-delay xl:text-7xl">
           The
         </span>
-        <h1 className=" text-white w-fit md:text-9xl text-7xl  tracking-in-expand text xl:text-[300px] ">
+        <h1 className=" text-white w-fit md:text-9xl text-7xl  tracking-in-expand text xl:text-[260px] ">
           Embrione
         </h1>
         <span className="text-white  text-1xl md:text-2xl pl-1 text-focus-in xl:text-4xl">

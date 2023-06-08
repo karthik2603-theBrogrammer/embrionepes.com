@@ -143,7 +143,7 @@ export const announcements = [
     announcementName: "Kodikon 2.0",
     announcementDescription:
       "Greetings PES! Registrations are OPEN! Put your thinking caps on and register asap. Link available below!",
-    formLink: "googleFormLink",
+    formLink: "https://docs.google.com/forms/d/e/1FAIpQLScegI-fEOhcmU61cXzzrN009z8wtvY1Pkse_WGsOKkX-Lq2kg/closedform",
     dateOfEntry: 1677409496000,
     postedBy: "shyam singh",
     postedByDomain: "WebDev Domain",
@@ -152,7 +152,7 @@ export const announcements = [
     announcementName: "Embrione is Recruiting!",
     announcementDescription:
       "We are expanding our team and it's your turn to be a part of it!✨ Application link available below! Register ASAP!",
-    formLink: "googleFormLink",
+    formLink: "Closed",
     dateOfEntry: 1674299096000,
     postedBy: "ram singh",
     postedByDomain: "WebDev Domain",
@@ -161,7 +161,7 @@ export const announcements = [
     announcementName: "Kodikon 1.0",
     announcementDescription:
       "THE OFFICIAL ANNOUNCEMENT IS HERE!🔥💫 First of its kind: KodiKon - the 24 hour beginner-friendly hackathon, exclusively for the 2nd year students, is FINALLY HAPPENING!✨",
-    formLink: "googleFormLink",
+    formLink: "Closed",
     dateOfEntry: 1661684696000,
     postedBy: "ram singh",
     postedByDomain: "WebDev Domain",
@@ -172,5 +172,13 @@ export const socialLinks = [
   {
     social: "LinkedIn",
     url: "https://www.linkedin.com/company/the-embrione/about/",
+  },
+  {
+    social: "WhatsApp",
+    url: "https://chat.whatsapp.com/EOeJA31u2OqBDKTMckWMZU",
+  },
+  {
+    social: "Discord",
+    url: "https://discord.com/invite/jxtae4PKXW",
   },
 ];

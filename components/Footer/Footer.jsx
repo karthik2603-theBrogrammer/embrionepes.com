@@ -2,7 +2,7 @@
 import React from "react";
 import pesLogo from "../../assets/PES_LogoWhite.webp";
 import Image from "next/image";
-import { BsInstagram } from "react-icons/bs";
+import { BsInstagram,BsDiscord,BsWhatsapp } from "react-icons/bs";
 import { HiOutlineMail } from "react-icons/hi";
 import { AiFillLinkedin } from "react-icons/ai";
 import { Tilt } from "react-tilt";
@@ -40,11 +40,15 @@ const Footer = () => {
           <a href={socialLinks[0].url} target="_blank">
             <BsInstagram size={23} className={iconStyles} />
           </a>
-          <a>
-            <HiOutlineMail size={28} className={iconStyles} />
-          </a>
+
           <a href={socialLinks[1]?.url} target = '_blank'>
             <AiFillLinkedin size={26} className={iconStyles} />
+          </a>
+          <a href={socialLinks[2]?.url} target = '_blank'>
+            <BsWhatsapp size={26} className={iconStyles} />
+          </a>
+          <a href={socialLinks[3]?.url} target = '_blank'>
+            <BsDiscord size={26} className={iconStyles} />
           </a>
         </div>
         <p className="text-center w-fit">© All Rights Reserved 2023</p>

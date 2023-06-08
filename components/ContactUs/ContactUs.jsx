@@ -10,10 +10,15 @@ const ContactUs = () => {
     register,
     handleSubmit,
     formState: { errors },
+    resetField
   } = useForm();
   const onSubmit = (data) => {
     console.log(data);
-    console.log(errors);
+    resetField('Full Name')
+    resetField('Email ID')
+    resetField('Subject')
+    resetField('Message')
+
   };
   return (
     <div className="p-5 md:p-[110px] flex flex-col relative items-center justify-center">
@@ -30,7 +35,7 @@ const ContactUs = () => {
         <form
           onSubmit={handleSubmit(onSubmit)}
           className="flex flex-col items-center justify-center space-y-7  p-4 md:p-0 md:pl-6"
-          data-aos="flip-up"
+          data-aos="zoom-in-up"
           data-aos-duration="500"
           data-aos-delay="200"
         >

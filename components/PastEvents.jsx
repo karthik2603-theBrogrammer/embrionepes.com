@@ -35,7 +35,7 @@ const PastEvents = () => {
               className={`flex items-center justify-center text-[60%] md:text-2xl  p-3 rounded-md cursor-pointer ${
                 activeEvent === clubEvent?.eventName
                   ? "bg-white text-blue-950"
-                  : "text-white"
+                  : "text-white "
               } transition ease-in-out duration-300`}
               key={index}
               onClick={() => {
