@@ -1,7 +1,8 @@
-'use client'
-import React from "react";
+"use client";
+import React, { useRef } from "react";
 import Image from "next/image";
-import { motion } from "framer-motion";
+import { motion, useDragControls } from "framer-motion";
+
 const icon = {
   hidden: {
     pathLength: 0,
@@ -13,16 +14,19 @@ const icon = {
   },
 };
 const Navbar = () => {
-  
+  const constraintsRef = useRef(null);
+
   return (
-    <div className="h-fit w-screen flex items-center justify-center md:justify-end">
-      <Image
-        src="/embrionelogo.png"
-        height={200}
-        width={200}
-        className="md:pr-10 flicker-logo h-[100px] w-[100px] md:h-[200px] md:w-[200px] cursor-pointer "
-      />
-    </div>
+    <motion.div className="h-fit w-screen flex items-center justify-center md:justify-end">
+      <motion.div >
+        <Image
+          src="/embrionelogo.png"
+          height={200}
+          width={200}
+          className="md:pr-10 flicker-logo h-[100px] w-[100px] md:h-[200px] md:w-[200px] cursor-pointer "
+        />
+      </motion.div>
+    </motion.div>
   );
 };
 

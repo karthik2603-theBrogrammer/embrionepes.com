@@ -7,6 +7,8 @@ import { HiOutlineMail } from "react-icons/hi";
 import { AiFillLinkedin } from "react-icons/ai";
 import { Tilt } from "react-tilt";
 import { socialLinks } from "@/constants";
+import {motion} from 'framer-motion'
+
 const defaultOptions = {
   reverse: false, // reverse the tilt direction
   max: 35, // max tilt rotation (degrees)
@@ -29,9 +31,9 @@ const Footer = () => {
     >
       <a href="https://pes.edu/" target="_blank">
         <Tilt defaultOptions={defaultOptions}>
-          <div className="flex flex-col items-center justify-center">
+          <motion.div className="flex flex-col items-center justify-center" >
             <Image src={pesLogo} alt="PES-LOGO" height={200} width={200} />
-          </div>
+          </motion.div>
         </Tilt>
       </a>
 

@@ -3,25 +3,35 @@
 import React, { useEffect, useState } from "react";
 import { AiFillAlert } from "react-icons/ai";
 import TimeAgo from "react-timeago";
+import {
+  motion,
+  useScroll,
+  useTransform,
+  useMotionValueEvent,
+} from "framer-motion";
 
 const AnnouncementComponent = ({
   index,
   announcementName,
   announcementDescription,
   formLink,
+  formLinkStatus,
   dateOfEntry,
   postedByDomain,
   postedBy,
 }) => {
+  const { scrollYProgress, scrollY } = useScroll();
+  const scale = useTransform(scrollYProgress, [0, 1], [0.0001, 1]);
   const [ifNewAnnouncement, setNewAnnouncement] = useState(false);
   useEffect(() => {
-    if (Math.abs(Date.now() - dateOfEntry) / 36e5 < 48) {
+    if (Math.abs(Date.now() - dateOfEntry) / 36e5 < 72) {
       setNewAnnouncement(true);
     }
   }, []);
 
   return (
-    <div
+    <motion.div
+    // style={{scale}}
       className={` w-fit h-fit xl:w-[60%] bg-gray-400 rounded-lg bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 text-gray-200 mx-2 my-4  px-2 py-2 flex flex-col items-center justify-center relative z-[23]`}
       data-aos="zoom-in-down"
       data-aos-duration="500"
@@ -39,7 +49,7 @@ const AnnouncementComponent = ({
             </div>
           )}
 
-          <p className="md:text-2xl">
+          <p className="md:text-1xl">
             <TimeAgo date={new Date(dateOfEntry)} />
           </p>
         </div>
@@ -53,17 +63,15 @@ const AnnouncementComponent = ({
         {/* <p>
           by {postedBy}, {postedByDomain}
         </p> */}
-        {formLink === "Closed" ? (
-          
-            <p>🛑  Closed</p>
-          
+        {formLinkStatus === "Closed" ? (
+          <p> 🛑 Closed</p>
         ) : (
           <a href={formLink} target="_blank">
             <p>🔗 🟢 Click to go to the form! </p>
           </a>
         )}
       </div>
-    </div>
+    </motion.div>
   );
 };
 

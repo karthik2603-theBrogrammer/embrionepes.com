@@ -32,10 +32,10 @@ const PastEvents = () => {
             data-aos-delay={(index + 1) * 300}
           >
             <span
-              className={`flex items-center justify-center text-[60%] md:text-2xl  p-3 rounded-md cursor-pointer ${
+              className={`flex items-center justify-center text-[60%] md:text-2xl  p-3 rounded-md cursor-pointer  ${
                 activeEvent === clubEvent?.eventName
                   ? "bg-white text-blue-950"
-                  : "text-white "
+                  : "text-white hover:text-teal-200"
               } transition ease-in-out duration-300`}
               key={index}
               onClick={() => {
