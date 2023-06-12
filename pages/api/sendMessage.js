@@ -1,40 +1,51 @@
-const nodemailer = require('nodemailer')
+const nodemailer = require("nodemailer");
 const transporter = nodemailer.createTransport({
-    host: 'smtp.gmail.com',
-    port: 587,
-    secure: false,
-    auth: {
-      user: 'Embrione Test Mail.', // Your email address
-      pass: '2 factor Authentication' // Your email password
-    }
-  });
-export default async function handler(req,res){
-    if (req.method != 'POST') {
-        res.status(405).json({ body: 'Method Not Allowed' });
-        return
-    }
-    const { fullName, email, subject, message } = req.body
-    const mailOptions = {
-        // from: 'pes1202100591@pesu.pes.edu',
-        to: 'karthiknamboori42@gmail.com',
-        subject: 'Alert!',
-        text: `Embrione Website test mail ${test_count}`
-      };
+  host: "smtp.gmail.com",
+  port: 587,
+  secure: false,
+  auth: {
+    user: "theembrionetech@gmail.com", // Your email address
+    pass: process.env.APP_PASSWORD, // Your email password
+  },
+});
+export default async function handler(req, res) {
+  if (req.method != "POST") {
+    res.status(405).json({ body: "Method Not Allowed" });
+    return;
+  }
 
-    const newMessage = {
-        ...message,
-        created_at: new Date(Date.now()).toLocaleDateString()
-        //so far i got the data from the client maybe, then now we push it to redis
+  const { fullName, emailID, subject, message } = req.body;
+  const mailOptions = {
+    to: "namkarthik2003@gmail.com", //The Embrione Mail comes here.
+    subject: `${subject}`,
+    text: `Message from ${fullName}. Embrione can reach back to him/her at ${emailID}\n\n${message}`,
+  };
+  const mailOptionsToDev = {
+    to: "namkarthik2003@gmail.com",
+    subject: `${subject}`,
+    text: `Message from ${fullName}. Embrione can reach back to him/her at ${emailID}\n\n${message}`,
+  };
+
+  transporter.sendMail(mailOptionsToDev, (error, info) => {
+    // this is to bypass all the mails via the embrione tech mail as well
+    if (error) {
+      console.log(error);
+    } else {
+      // console.log("Email sent: " + info.response + Date.now());
+      console.log("Mail Sent Successfully!");
     }
-    transporter.sendMail(mailOptions, (error, info) => {
-        if (error) {
-          console.log(error);
-      
-        } else {
-          console.log('Email sent: ' + info.response + Date.now());
-        }
-        // res.json({name: 'This is the backendddd'})
+    // res.json({name: 'This is the backendddd'})
+  });
+  transporter.sendMail(mailOptions, (error, info) => {
+    if (error) {
+      console.log(error);
+    } else {
+      // console.log("Email sent: " + info.response + Date.now());
+      console.log("Mail Sent Successfully!");
+      res.status(200).json({
+        message: "Success! Message Sent! We will get back to you shortly!",
       });
-    console.log(newMessage)
-    res.status(200).json({ message: newMessage });
+    }
+
+  });
 }

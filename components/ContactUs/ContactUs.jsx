@@ -3,6 +3,9 @@ import React from "react";
 import Lottie from "lottie-react";
 import contact from "../../assets/contact.json";
 import { useForm } from "react-hook-form";
+import axios from "axios";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const inputStyles = "text-center py-2 rounded-md w-[300px] text-black";
 const ContactUs = () => {
@@ -10,15 +13,52 @@ const ContactUs = () => {
     register,
     handleSubmit,
     formState: { errors },
-    resetField
+    resetField,
   } = useForm();
-  const onSubmit = (data) => {
-    console.log(data);
-    resetField('Full Name')
-    resetField('Email ID')
-    resetField('Subject')
-    resetField('Message')
+  const onSubmit = async (formData) => {
+    toast.info('Sending Your Message...', {
+      position: "bottom-center",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "dark",
+      });
 
+    axios
+      .post("/api/sendMessage", formData)
+      .then((res) => {
+        // console.log(res.data);
+        toast.success( `${res?.data?.message}`, {
+          position: "top-center",
+          draggablePercent:60,
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "dark",
+        });
+      })
+      .catch((err) => {console.log(err);
+        toast.error('Some Error occured, Please try again', {
+          position: "bottom-center",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "dark",
+          });});
+
+    // resetField("fullName");
+    // resetField("emailID");
+    // resetField("subject");
+    // resetField("message");
   };
   return (
     <div className="p-5 md:p-[110px] flex flex-col relative items-center justify-center">
@@ -34,7 +74,7 @@ const ContactUs = () => {
       >
         <form
           onSubmit={handleSubmit(onSubmit)}
-          className="flex flex-col items-center justify-center space-y-7  p-4 md:p-0 md:pl-6"
+          className="flex flex-col items-center justify-center space-y-7  px-4 pb-4 md:p-0 md:pl-6"
           data-aos="zoom-in-up"
           data-aos-duration="500"
           data-aos-delay="200"
@@ -50,31 +90,31 @@ const ContactUs = () => {
             type="text"
             className={`${inputStyles}`}
             placeholder="Full Name"
-            {...register("Full Name", { required: true, max: 335, min: 3 })}
+            {...register("fullName", { required: true, max: 335, min: 3 })}
           />
           <input
             type="email"
             className={`${inputStyles}`}
             placeholder="Email ID"
-            {...register("Email ID", { required: true, max: 257, min: 5 })}
+            {...register("emailID", { required: true, max: 257, min: 5 })}
           />
           <input
             type="text"
             className={`${inputStyles}`}
             placeholder="Subject"
-            {...register("Subject", { required: true, max: 70, min: 0 })}
+            {...register("subject", { required: true, max: 70, min: 0 })}
           />
           <textarea
             type="text"
             className={`${inputStyles}`}
             placeholder="Message"
-            {...register("Message", { required: true, max: 400, min: 0 })}
+            {...register("message", { required: true, max: 400, min: 0 })}
           />
 
           <input
             type="submit"
             value="Send!"
-            className="cursor-pointer hover:bg-blue-300 hover:text-black  rounded-md transition ease-in duration-150 p-2 mb-4"
+            className="cursor-pointer hover:bg-blue-300 hover:text-black  rounded-md transition ease-in duration-150 p-2 relative bottom-4"
           />
         </form>
         <div
@@ -91,6 +131,7 @@ const ContactUs = () => {
           />
         </div>
       </div>
+      <ToastContainer draggablePercent={60} />
     </div>
   );
 };
