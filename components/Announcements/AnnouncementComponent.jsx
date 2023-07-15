@@ -32,7 +32,7 @@ const AnnouncementComponent = ({
   return (
     <motion.div
     // style={{scale}}
-      className={` w-fit h-fit xl:w-[60%] bg-gray-400 rounded-lg bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 text-gray-200 mx-2 my-4  px-2 py-2 flex flex-col items-center justify-center relative z-[23]`}
+      className={` w-fit h-fit xl:w-[60%] bg-gray-400 rounded-lg bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 text-gray-200 mx-2 my-4  px-2 py-2 flex flex-col items-center justify-center relative `}
       data-aos="zoom-in-down"
       data-aos-duration="500"
       data-aos-delay={((index % 3) + 1) * 200}

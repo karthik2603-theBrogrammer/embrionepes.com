@@ -70,7 +70,7 @@ const ContactUs = () => {
         Get In Touch With Us!
       </h1>
       <div
-        className={` w-fit h-fit bg-gray-400 rounded-lg bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 text-gray-200  flex flex-col md:flex-row  items-center justify-center relative z-[23] lg:px-[70px]`}
+        className={` w-fit h-fit bg-gray-400 rounded-lg bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 text-gray-200  flex flex-col md:flex-row  items-center justify-center relative  lg:px-[70px]`}
       >
         <form
           onSubmit={handleSubmit(onSubmit)}

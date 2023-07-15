@@ -1,9 +1,18 @@
+'use client'
 import React from "react";
 import DomainComponent from "./DomainComponent";
 import { domainDetails } from "@/constants";
+import { motion } from "framer-motion";
+import { staggerContainer } from "@/utils/framermotion";
 const Team = () => {
   return (
-    <div className="p-5 md:p-[110px] flex flex-col">
+    <motion.div
+      variants={staggerContainer}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: false, amount: 0.01  }}
+      className="p-5 md:p-[110px] flex flex-col"
+    >
       <h1
         className="text-white w-fit md:text-7xl text-5xl py-6 "
         data-aos="zoom-in-up"
@@ -16,11 +25,11 @@ const Team = () => {
           <DomainComponent
             index={index}
             domainName={domain?.domainName}
-            headsAndPhotos = {domain?.headsAndPhotos}
+            headsAndPhotos={domain?.headsAndPhotos}
           />
         ))}
       </div>
-    </div>
+    </motion.div>
   );
 };
 

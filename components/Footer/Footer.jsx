@@ -2,12 +2,13 @@
 import React from "react";
 import pesLogo from "../../assets/PES_LogoWhite.webp";
 import Image from "next/image";
-import { BsInstagram,BsDiscord,BsWhatsapp } from "react-icons/bs";
+import { BsInstagram, BsDiscord, BsWhatsapp } from "react-icons/bs";
 import { HiOutlineMail } from "react-icons/hi";
 import { AiFillLinkedin } from "react-icons/ai";
 import { Tilt } from "react-tilt";
 import { socialLinks } from "@/constants";
-import {motion} from 'framer-motion'
+import { motion } from "framer-motion";
+import { useScramble } from "use-scramble";
 
 const defaultOptions = {
   reverse: false, // reverse the tilt direction
@@ -23,6 +24,19 @@ const defaultOptions = {
 const iconStyles =
   "hover:text-blue-400 transition ease-in hover:-translate-y-1 duration-100 cursor-pointer";
 const Footer = () => {
+  const { ref, replay } = useScramble({
+    text: "Embrione",
+    range: [97, 125],
+    speed: 0.3,
+    tick: 1,
+    step: 1,
+    scramble: 2,
+    seed: 0,
+    chance: 1,
+    overdrive: false,
+    overflow: true,
+  });
+
   return (
     <div
       className="w-screen h-[40vh] mt-9 flex md:flex-row flex-col justify-center items-center relative text-white space-y-6  "
@@ -31,7 +45,7 @@ const Footer = () => {
     >
       <a href="https://pes.edu/" target="_blank">
         <Tilt defaultOptions={defaultOptions}>
-          <motion.div className="flex flex-col items-center justify-center" >
+          <motion.div className="flex flex-col items-center justify-center">
             <Image src={pesLogo} alt="PES-LOGO" height={200} width={200} />
           </motion.div>
         </Tilt>
@@ -43,20 +57,20 @@ const Footer = () => {
             <BsInstagram size={23} className={iconStyles} />
           </a>
 
-          <a href={socialLinks[1]?.url} target = '_blank'>
+          <a href={socialLinks[1]?.url} target="_blank">
             <AiFillLinkedin size={26} className={iconStyles} />
           </a>
-          <a href={socialLinks[2]?.url} target = '_blank'>
+          <a href={socialLinks[2]?.url} target="_blank">
             <BsWhatsapp size={26} className={iconStyles} />
           </a>
-          <a href={socialLinks[3]?.url} target = '_blank'>
+          <a href={socialLinks[3]?.url} target="_blank">
             <BsDiscord size={26} className={iconStyles} />
           </a>
         </div>
         <p className="text-center w-fit">© All Rights Reserved 2023</p>
         <p className="text-center">
           Made with ❣️ By the{" "}
-          <span className="gradient-text-animation">Embrione</span> WebDev Team
+          <span className="gradient-text-animation" ref={ref} /> WebDev Team
         </p>
       </div>
 
