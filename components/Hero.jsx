@@ -55,7 +55,6 @@ const Hero = () => {
       >
         <span
           className="text-white text-4xl tracking-in-expand-more-delay xl:text-7xl"
-          ref={ref2}
         >
           The
         </span>
