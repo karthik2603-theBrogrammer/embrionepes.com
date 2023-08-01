@@ -31,7 +31,7 @@ const AnnouncementComponent = ({
 
   return (
     <motion.div
-    // style={{scale}}
+      // style={{scale}}
       className={` w-fit h-fit xl:w-[60%] bg-gray-400 rounded-lg bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 text-gray-200 mx-2 my-4  px-2 py-2 flex flex-col items-center justify-center relative `}
       data-aos="zoom-in-down"
       data-aos-duration="500"
@@ -64,11 +64,15 @@ const AnnouncementComponent = ({
           by {postedBy}, {postedByDomain}
         </p> */}
         {formLinkStatus === "Closed" ? (
-          <p> 🛑 Closed</p>
-        ) : (
+          <p>🛑 Closed</p>
+        ) : formLinkStatus === "Soon" ? (
+          <p>⏳ 🟡 {"     "}  Coming Soon</p>
+        ) : formLinkStatus === "Open" ? (
           <a href={formLink} target="_blank">
             <p>🔗 🟢 Click to go to the form! </p>
           </a>
+        ) : (
+          <p>Invalid status</p>
         )}
       </div>
     </motion.div>

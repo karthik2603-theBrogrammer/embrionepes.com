@@ -2,6 +2,7 @@
 import React, { useRef } from "react";
 import Image from "next/image";
 import { motion, useDragControls } from "framer-motion";
+import NavbarAnnouncementComponent from "./Announcements/NavbarAnnouncementComponent";
 
 const icon = {
   hidden: {
@@ -17,7 +18,10 @@ const Navbar = () => {
   const constraintsRef = useRef(null);
 
   return (
-    <motion.div className="h-fit w-screen flex items-center justify-center md:justify-end">
+    <motion.div className="h-fit w-screen flex flex-1 flex-col md:flex-row items-center justify-center md:justify-end relative">
+      <div className="self-center w-fit relative md:right-9 flex items-center justify-center">
+        <NavbarAnnouncementComponent />
+      </div>
       <motion.div >
         <Image
           src="/embrionelogo.png"

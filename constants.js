@@ -140,13 +140,23 @@ export const ClubEvents = [
 
 export const announcements = [
   {
+    announcementName: "Kodikon 3.0",
+    announcementDescription:
+      "The most awaited hackathon of PES University is here, exclusively for you, second years only! Stay Tuned, Coming Soon!!",
+    formLink: "",
+    formLinkStatus:'Soon',
+    dateOfEntry: 1690869081967,
+    postedBy: "Karthik Namboori",
+    postedByDomain: "WebDev Domain",
+  },
+  {
     announcementName: "Kodikon 2.0",
     announcementDescription:
       "Greetings PES! Registrations are OPEN! Put your thinking caps on and register asap. Link available below!",
     formLink: "https://docs.google.com/forms/d/e/1FAIpQLScegI-fEOhcmU61cXzzrN009z8wtvY1Pkse_WGsOKkX-Lq2kg/closedform",
     formLinkStatus:'Closed',
     dateOfEntry: 1677409496000,
-    postedBy: "shyam singh",
+    postedBy: "Karthik Namboori",
     postedByDomain: "WebDev Domain",
   },
   {
@@ -156,7 +166,7 @@ export const announcements = [
     formLink: "",
     formLinkStatus:'Closed',
     dateOfEntry: 1674299096000,
-    postedBy: "ram singh",
+    postedBy:"Karthik Namboori",
     postedByDomain: "WebDev Domain",
   },
   {
@@ -166,7 +176,7 @@ export const announcements = [
     formLink: "",
     formLinkStatus:'Closed',
     dateOfEntry: 1661684696000,
-    postedBy: "ram singh",
+    postedBy:"Karthik Namboori",
     postedByDomain: "WebDev Domain",
   },
 ];
