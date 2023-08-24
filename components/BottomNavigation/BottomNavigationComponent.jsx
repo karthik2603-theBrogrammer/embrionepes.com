@@ -19,7 +19,7 @@ const BottomNavigationComponent = () => {
   const iconStyles = `text-white`
   return (
     <div
-      className="md:hidden h-fit px-8 py-5 z-999 m-8 flex flex-row items-center justify-center space-x-9 text-justify bg-blue-100 rounded-full bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-10 puff-in-center relative"
+      className="puff-in-center md:hidden h-fit px-8 py-5 z-999 m-8 flex flex-row items-center justify-center space-x-9 text-justify bg-blue-100 rounded-full bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-10  relative"
     >
       <AiFillHome className={`${iconStyles}`} size={20} />
       <AiFillInfoCircle className={`${iconStyles}`} size={20} />

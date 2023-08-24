@@ -48,10 +48,10 @@ const Hero = () => {
   });
 
   return (
-    <motion.div className="flex flex-col items-center md:items-start justify-between h-fit md:h-[80vh] md:pt-[140px] md:py-[100px] py-[40px] overflow-hidden">
+    <motion.div className="flex flex-col items-center md:items-start justify-between h-fit md:h-[80vh] md:pt-[140px]   overflow-hidden">
       <motion.div
         // style={{ scale }}
-        className="z-10 w-fit max-w-5xl items-center md:items-start justify-center font-mono text-sm flex flex-col md:pl-24  relative"
+        className="z-10 w-fit max-w-5xl items-center md:items-start justify-center font-mono text-sm flex flex-col md:pl-24  relative top-16"
       >
         <span
           className="text-white text-4xl tracking-in-expand-more-delay xl:text-7xl"
@@ -60,10 +60,10 @@ const Hero = () => {
         </span>
 
         <h1
-          className=" text-white w-fit md:text-9xl text-[70px]  text xl:text-[210px] md:tracking-in-expand md:py-0 py-9"
+          className=" text-white w-fit md:text-9xl text-[70px]  text xl:text-[190px] md:tracking-in-expand md:py-0 py-9"
           ref={ref}
         />
-        <span className="text-white  text-1xl md:text-2xl pl-1 text-focus-in xl:text-4xl">
+        <span className="text-white  text-1xl md:text-2xl pl-1 text-focus-in xl:text-3xl">
           CSE Vertical, PES University
         </span>
       </motion.div>

@@ -34,9 +34,9 @@ const DomainComponent = ({ index, domainName, headsAndPhotos }) => {
   return (
     <Tilt options={defaultOptions}>
       <motion.div
-         variants={fadeIn('right', 'spring', (index * 0.2) % 3, 1)}
-         initial="hidden"
-      whileInView="show"
+         data-aos="zoom-in-right"
+         data-aos-duration="500"
+         data-aos-delay={((index % 3) + 1) * 200}
         className={`h-fit w-[250px] md:h-[350px] md:w-[300px] bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 text-gray-200 m-4  px-5  flex flex-col items-center justify-center relative`}
       >
         <h2 className=" mt-4 py-5  text-2xl md:text-4xl text-center">

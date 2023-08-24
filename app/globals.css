@@ -198,12 +198,12 @@ body::-webkit-scrollbar-thumb {
   z-index: 1;
   width: 100%;
   content: "";
-  height: 10px;
+  height: 7px;
   position: absolute;
-  backdrop-filter: saturate(180%) blur(20px); /* Aqua gradient backdrop filter */
+  backdrop-filter: blur(80px); /* Aqua gradient backdrop filter */
   background: linear-gradient(
     to bottom,
-    aqua
+    transparent
   ); /* Replace with your desired gradient */
 }
 .navbar-announcement-animation-subcontainer::after {
