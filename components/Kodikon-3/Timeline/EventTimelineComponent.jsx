@@ -4,7 +4,7 @@ import 'react-vertical-timeline-component/style.min.css';
 import { BsGoogle } from 'react-icons/bs';
 import { Eye } from 'lucide-react';
 
-const EventTimelineComponent = () => {
+const EventTimelineComponent = ({eventTitle, eventDescription, eventTimings, miscellaneous}) => {
   return (
     <VerticalTimelineElement
       contentStyle={{
