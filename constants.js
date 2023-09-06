@@ -144,7 +144,7 @@ export const announcements = [
     announcementDescription:
       "The most awaited hackathon of PES University is here, exclusively for you, second years only! Stay Tuned, Coming Soon!!",
     formLink: "",
-    formLinkStatus:'Soon',
+    formLinkStatus: "Soon",
     dateOfEntry: 1690869081967,
     postedBy: "Karthik Namboori",
     postedByDomain: "WebDev Domain",
@@ -153,8 +153,9 @@ export const announcements = [
     announcementName: "Kodikon 2.0",
     announcementDescription:
       "Greetings PES! Registrations are OPEN! Put your thinking caps on and register asap. Link available below!",
-    formLink: "https://docs.google.com/forms/d/e/1FAIpQLScegI-fEOhcmU61cXzzrN009z8wtvY1Pkse_WGsOKkX-Lq2kg/closedform",
-    formLinkStatus:'Closed',
+    formLink:
+      "https://docs.google.com/forms/d/e/1FAIpQLScegI-fEOhcmU61cXzzrN009z8wtvY1Pkse_WGsOKkX-Lq2kg/closedform",
+    formLinkStatus: "Closed",
     dateOfEntry: 1677409496000,
     postedBy: "Karthik Namboori",
     postedByDomain: "WebDev Domain",
@@ -164,9 +165,9 @@ export const announcements = [
     announcementDescription:
       "We are expanding our team and it's your turn to be a part of it!✨ Application link available below! Register ASAP!",
     formLink: "",
-    formLinkStatus:'Closed',
+    formLinkStatus: "Closed",
     dateOfEntry: 1674299096000,
-    postedBy:"Karthik Namboori",
+    postedBy: "Karthik Namboori",
     postedByDomain: "WebDev Domain",
   },
   {
@@ -174,9 +175,9 @@ export const announcements = [
     announcementDescription:
       "THE OFFICIAL ANNOUNCEMENT IS HERE!🔥💫 First of its kind: KodiKon - the 24 hour beginner-friendly hackathon, exclusively for the 2nd year students, is FINALLY HAPPENING!✨",
     formLink: "",
-    formLinkStatus:'Closed',
+    formLinkStatus: "Closed",
     dateOfEntry: 1661684696000,
-    postedBy:"Karthik Namboori",
+    postedBy: "Karthik Namboori",
     postedByDomain: "WebDev Domain",
   },
 ];
@@ -193,5 +194,95 @@ export const socialLinks = [
   {
     social: "Discord",
     url: "https://discord.com/invite/jxtae4PKXW",
+  },
+];
+
+export const kodikonEvents = [
+  {
+    eventTitle: "Event 1",
+    eventTimings: "Event 1",
+    eventDescription: "Event 1",
+    miscellaneous: "Event 1",
+  },
+  {
+    eventTitle: "Event 1",
+    eventTimings: "Event 1",
+    eventDescription: "Event 1",
+    miscellaneous: "Event 1",
+  },
+  {
+    eventTitle: "Event 1",
+    eventTimings: "Event 1",
+    eventDescription: "Event 1",
+    miscellaneous: "Event 1",
+  },
+  {
+    eventTitle: "Event 1",
+    eventTimings: "Event 1",
+    eventDescription: "Event 1",
+    miscellaneous: "Event 1",
+  },
+];
+
+export const sponsors = [
+  {
+    category: "Title Sponsors",
+    categorySponsors: [
+      {
+        name: "Title Sponsor 1",
+        imageUrl: "",
+      },
+    ],
+  },
+  {
+    category: "Category1",
+    categorySponsors: [
+      {
+        name: "Sponsor 1",
+        imageUrl: "",
+      },
+      {
+        name: "Sponsor 1",
+        imageUrl: "",
+      },
+      {
+        name: "Sponsor 1",
+        imageUrl: "",
+      },
+    ],
+  },
+  {
+    category: "Category2",
+    categorySponsors: [
+      {
+        name: "Sponsor 1",
+        imageUrl: "",
+      },
+      {
+        name: "Sponsor 1",
+        imageUrl: "",
+      },
+      {
+        name: "Sponsor 1",
+        imageUrl: "",
+      },
+    ],
+  },
+  {
+    category: "Category3",
+    categorySponsors: [
+      {
+        name: "Sponsor 1",
+        imageUrl: "",
+      },
+      {
+        name: "Sponsor 1",
+        imageUrl: "",
+      },
+      {
+        name: "Sponsor 1",
+        imageUrl: "",
+      },
+    ],
   },
 ];

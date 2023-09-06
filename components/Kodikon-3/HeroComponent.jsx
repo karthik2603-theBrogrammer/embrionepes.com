@@ -1,4 +1,7 @@
 'use client'
+
+// ReadMe: Here the Banner provided by the team will be placed. Measure the right Aspect Ratio and fit the banner into
+// the screen.
 import React from 'react'
 import workingLoader from '../../assets/working-on-kodikon.json'
 import Lottie from "lottie-react";

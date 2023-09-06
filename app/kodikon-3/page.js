@@ -1,16 +1,36 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer/Footer";
+import { NavbarKodikon3 } from "@/components/Kodikon-3/NavbarKodikon3";
 import ScrollProgressComponent from "@/components/ScrollProgress/ScrollProgressComponent";
 import BottomNavigationComponent from "@/components/BottomNavigation/BottomNavigationComponent";
 import HeroComponent from "@/components/Kodikon-3/HeroComponent";
+import AboutTheEvent from "@/components/Kodikon-3/AboutTheEvent/AboutTheEvent";
+import PreviousEditionComponent from "@/components/Kodikon-3/PreviousEditions/PreviousEditionComponent";
+import HackathonThemes from "@/components/Kodikon-3/HackathonThemes/HackathonThemes";
+import EventTimeline from "@/components/Kodikon-3/Timeline/EventTimeline";
+import SponsorsComponent from "@/components/Kodikon-3/Sponsors/SponsorsComponent";
+import PrizesComponent from "@/components/Kodikon-3/Prizes/PrizesComponent";
+import PreHackathonSessions from "@/components/Kodikon-3/PreHackathonSessions/PreHackathonSessions";
 export default function LandingPage() {
   return (
     <>
-      <ScrollProgressComponent />
+      
       <div className="relative flex justify-center items-center">
-        <Navbar />
+        <NavbarKodikon3/>
       </div>
-      <HeroComponent/>
+      <ScrollProgressComponent />
+
+      <div className=" relative flex justify-center items-center flex-col md:px-32 gap-y-9">
+        <HeroComponent />
+        <AboutTheEvent />
+        <PreviousEditionComponent />
+        <HackathonThemes/>
+        <EventTimeline/>
+        <SponsorsComponent/>
+        <PrizesComponent/>
+        <PreHackathonSessions/>
+
+      </div>
 
       <div className="flex flex-col items-center justify-center sticky bottom-4 bg-transparent">
         <BottomNavigationComponent />
