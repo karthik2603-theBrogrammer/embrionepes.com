@@ -142,7 +142,7 @@ export const announcements = [
   {
     announcementName: "Kodikon 3.0",
     announcementDescription:
-      "The most awaited hackathon of PES University is here, exclusively for you, second years only! Stay Tuned, Coming Soon!!",
+      "The most awaited hackathon of PES University is here, only this time, BIGGER! The 24 hour National Hackathon, Kodikon 3.0,  is coming. Stay Tuned, for more!!",
     formLink: "",
     formLinkStatus: "Soon",
     dateOfEntry: 1690869081967,
