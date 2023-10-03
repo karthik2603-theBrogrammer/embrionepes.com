@@ -10,7 +10,8 @@ const EventTimelineComponent = ({eventTitle, eventDescription, eventTimings, mis
       contentStyle={{
         background: "transparent",
         color: "#fff",
-        border: "2px solid #2d2c34"
+        border: "2px solid #2d2c34",
+        boxShadow: "0 0 18px 1px #214d76"
       }}
       contentArrowStyle={{ borderRight: "7px solid  #1d1836" }}
       date={'6AM-9AM'}

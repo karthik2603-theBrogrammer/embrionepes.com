@@ -7,6 +7,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      animation: {
+        'spin-slow': 'bounce 3s linear infinite',
+      },
       boxShadow: {
         "footer": "10px 5px 6px -15px rgba(0, 0, 0, 0.3)",
       },

@@ -231,6 +231,7 @@ export const sponsors = [
       {
         name: "Title Sponsor 1",
         imageUrl: "",
+        sponsorWebsiteURL:""
       },
     ],
   },
@@ -240,14 +241,17 @@ export const sponsors = [
       {
         name: "Sponsor 1",
         imageUrl: "",
+        sponsorWebsiteURL:""
       },
       {
         name: "Sponsor 1",
         imageUrl: "",
+        sponsorWebsiteURL:""
       },
       {
         name: "Sponsor 1",
         imageUrl: "",
+        sponsorWebsiteURL:""
       },
     ],
   },
@@ -257,14 +261,17 @@ export const sponsors = [
       {
         name: "Sponsor 1",
         imageUrl: "",
+        sponsorWebsiteURL:""
       },
       {
         name: "Sponsor 1",
         imageUrl: "",
+        sponsorWebsiteURL:""
       },
       {
         name: "Sponsor 1",
         imageUrl: "",
+        sponsorWebsiteURL:""
       },
     ],
   },
@@ -274,14 +281,17 @@ export const sponsors = [
       {
         name: "Sponsor 1",
         imageUrl: "",
+        sponsorWebsiteURL:""
       },
       {
         name: "Sponsor 1",
         imageUrl: "",
+        sponsorWebsiteURL:""
       },
       {
         name: "Sponsor 1",
         imageUrl: "",
+        sponsorWebsiteURL:""
       },
     ],
   },

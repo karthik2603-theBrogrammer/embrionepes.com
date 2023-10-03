@@ -30,7 +30,7 @@ export const NavbarKodikon3 = () => {
                     <div className="flex items-center justify-between py-3 md:py-5 md:block">
                         <a href="https://flowbite.com/" className="flex items-center">
                             <img src="https://flowbite.com/docs/images/logo.svg" className="h-8 mr-3" alt="Flowbite Logo" />
-                            <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span>
+                            <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Embrione</span>
                         </a>
                         <div className="md:hidden flex flex-row items-center justify-center w-fit space-x-5">
                             <span className="text-white bg-white p-2 rounded-lg bg-opacity-25">
@@ -98,7 +98,7 @@ export const NavbarKodikon3 = () => {
                 <div className="hidden space-x-2 md:inline-block">
                     <a href="https://flowbite.com/" className="flex items-center">
                         <img src="https://flowbite.com/docs/images/logo.svg" className="h-8 mr-3" alt="Flowbite Logo" />
-                        <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span>
+                        <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Embrione</span>
                     </a>
                 </div>
             </div>
@@ -118,7 +118,7 @@ export const NavbarKodikon3 = () => {
   <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
     <a href="https://flowbite.com/" className="flex items-center">
         <img src="https://flowbite.com/docs/images/logo.svg" className="h-8 mr-3" alt="Flowbite Logo" />
-        <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span>
+        <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Embrione</span>
     </a>
     <button onClick={() => setShowNavbar(!showNavbar)} data-collapse-toggle="navbar-default" type="button" className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
         <span className="sr-only">Open main menu</span>
