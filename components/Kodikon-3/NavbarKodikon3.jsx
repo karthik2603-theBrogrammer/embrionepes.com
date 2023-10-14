@@ -20,7 +20,7 @@ export const NavbarKodikon3 = () => {
 
     return (
         <nav
-            className={`fixed inset-x-0 top--10 z-50 backdrop-blur  duration-200  py-4 border-b-2  ${isIntersecting
+            className={`fixed inset-x-0 top-100 z-50 backdrop-blur  duration-200  py-4 border-b-2  ${isIntersecting
                 ? "bg-zinc-900/0 border-zinc-900"
                 : "bg-zinc-900/500  border-zinc-800 "
                 }`} ref={ref}
