@@ -5,6 +5,7 @@ import leftguy from './leftguy.png'
 import rightguy from './rightguy.png'
 import fourteen from './14.png'
 import fifteen from './15.png'
+import mesh from './mesh.png'
 
 export {
     whitepeslogo,
@@ -13,5 +14,6 @@ export {
     leftguy,
     rightguy,
     fourteen,
-    fifteen
+    fifteen,
+    mesh
 };

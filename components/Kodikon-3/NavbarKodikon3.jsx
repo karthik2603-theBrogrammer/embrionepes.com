@@ -106,19 +106,19 @@ export const NavbarKodikon3 = () => {
                     >
                         <ul className="items-center justify-center space-y-8 md:flex md:space-x-3 lg:space-x-6 md:space-y-0">
                             <li className="text-white text-xs lg:text-[16px]">
-                                <Link href="/">About</Link>
+                                <Link href="/kodikon-3/#about">About</Link>
                             </li>
                             <li className="text-white text-xs lg:text-[16px]">
-                                <Link href="/">Themes</Link>
+                                <Link href="/kodikon-3/#theme">Themes</Link>
                             </li>
                             <li className="text-white text-xs lg:text-[16px]">
-                                <Link href="/">Timeline</Link>
+                                <Link href="/kodikon-3/#timeline">Timeline</Link>
                             </li>
                             <li className="text-white text-xs lg:text-[16px]">
-                                <Link href="/">Sponsers</Link>
+                                <Link href="/kodikon-3/#sponser">Sponsers</Link>
                             </li>
                             <li className="text-white text-xs lg:text-[16px]">
-                                <Link href="/">FAQ</Link>
+                                <Link href="/kodikon-3/#faq">FAQ</Link>
                             </li>
 
                         </ul>

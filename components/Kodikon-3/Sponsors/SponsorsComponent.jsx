@@ -12,7 +12,7 @@ const SponsorCard = ({ sponsorName, sponsorImageURL, sponsorWebsiteURL }) => {
 const SponsorsComponent = () => {
   return (
     <div className="flex flex-col w-full h-fit gap-6">
-      <TitleComponent titleData="Our Sponsors" />
+      <TitleComponent id="sponser" titleData="Our Sponsors" />
       <div className="w-full h-fit flex flex-col items-center justify-center gap-32 ">
         {
           sponsors?.map((sponsor, index) => (
