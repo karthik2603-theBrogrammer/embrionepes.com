@@ -3,7 +3,7 @@ import React from "react";
 import pesLogo from "../../assets/PES_LogoWhite.webp";
 import Image from "next/image";
 import { BsInstagram, BsDiscord, BsWhatsapp } from "react-icons/bs";
-import { HiOutlineMail } from "react-icons/hi";
+// import { HiOutlineMail } from "react-icons/hi"; // Not in use
 import { AiFillLinkedin } from "react-icons/ai";
 import { Tilt } from "react-tilt";
 import { socialLinks } from "@/constants";
