@@ -246,22 +246,22 @@ export const sponsors = [
     categorySponsors: [
       {
         name: "1password",
-        imageUrl: "/Sponsor/1password.png",
+        imageUrl: "/sponsors/one-password.png",
         sponsorWebsiteURL:""
       },
       {
         name: "Axure",
-        imageUrl: "/Sponsor/Axure.png",
+        imageUrl: "/sponsors/axure.png",
         sponsorWebsiteURL:""
       },
       {
         name: "echo3D",
-        imageUrl: "/sponsor/echo3D.png",
+        imageUrl: "/sponsors/echo-three-d.png",
         sponsorWebsiteURL:""
       },
       {
         name: "Wolfram",
-        imageUrl: "/sponsor/wolfram.png",
+        imageUrl: "/sponsors/wolfram.png",
         sponsorWebsiteURL:""
       }
     ],
