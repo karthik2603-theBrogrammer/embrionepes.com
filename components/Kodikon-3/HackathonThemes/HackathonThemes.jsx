@@ -38,7 +38,7 @@ const HackathonThemes = () => {
   return (
     <div className="flex flex-col w-full h-fit gap-8 py-8 ">
       <TitleComponent titleData="Hackathon Themes" id="theme" />
-      <div ref={themeGrid} className="w-full grid grid-cols-1 md:grid-cols-2 items-center justify-center gap-9">
+      <div ref={themeGrid} className="w-full grid grid-cols-1 md:grid-cols-2 gap-9">
         {
           themes.map((item, index) => (
             <motion.div
