@@ -5,7 +5,6 @@
 import React from 'react'
 import { copyofcopy, leftguy, rightguy, fourteen, fifteen } from "@/public/Kodikon3";
 import Image from 'next/image';
-import styles from './HeroComponent.module.css'
 
 const HeroComponent = () => {
   return (

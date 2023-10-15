@@ -22,16 +22,8 @@ export const NavbarKodikon3 = () => {
 
     return (
         <>
-        <style jsx>
-            {`
-                .whitepeslogo {
-                    
-                }
-            `}
-        </style>
-        
         <nav
-            className={`fixed inset-x-0 top-0 z-50 backdrop-blur  duration-200  py-4 border-b-2  ${isIntersecting
+            className={` fixed inset-x-0 top-0 z-50 backdrop-blur  duration-200  py-4 border-b-2  ${isIntersecting
                 ? "bg-zinc-900/0 border-zinc-900"
                 : "bg-zinc-900/500  border-zinc-800 "
                 }`} ref={ref}
@@ -59,9 +51,11 @@ export const NavbarKodikon3 = () => {
                             </a>
                         </div>
                         <div className="md:hidden flex flex-row items-center justify-center w-fit space-x-5">
-                            <span className="text-white bg-white p-2 rounded-lg bg-opacity-25">
+                            <button className="text-white bg-white p-2 rounded-lg bg-opacity-25 w-[20vw] h-[10vw]" style={{
+                                fontSize: "3vw"
+                            }}>
                                 Register!
-                            </span>
+                            </button>
                             <button
                                 className={`p-2 text-gray-700 rounded-md outline-none focus:border-gray-400 transition ease-in-out duration-100 ${navbar && 'animate-bounce'} ${!navbar && 'animate-pulse'}`}
                                 onClick={() => setNavbar(!navbar)}
