@@ -2,6 +2,8 @@
 import { ArrowLeft } from "lucide-react";
 import Link from "next/link";
 import React, { useEffect, useRef, useState } from "react";
+import { whitepeslogo, whitelogo } from "@/public/Kodikon3";
+import Image from "next/image";
 
 export const NavbarKodikon3 = () => {
     const ref = useRef(null);
@@ -19,8 +21,9 @@ export const NavbarKodikon3 = () => {
     }, []);
 
     return (
+        <>
         <nav
-            className={`fixed inset-x-0 top-0 z-50 backdrop-blur  duration-200  py-4 border-b-2  ${isIntersecting
+            className={` fixed inset-x-0 top-0 z-50 backdrop-blur  duration-200  py-4 border-b-2  ${isIntersecting
                 ? "bg-zinc-900/0 border-zinc-900"
                 : "bg-zinc-900/500  border-zinc-800 "
                 }`} ref={ref}
@@ -28,14 +31,31 @@ export const NavbarKodikon3 = () => {
             <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
                 <div>
                     <div className="flex items-center justify-between py-3 md:py-5 md:block">
-                        <a href="https://flowbite.com/" className="flex items-center">
-                            <img src="https://flowbite.com/docs/images/logo.svg" className="h-8 mr-3" alt="Flowbite Logo" />
-                            <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Embrione</span>
-                        </a>
+                        {/* {D:\Embrione PES\Kodikon 3.0\embrionepes.com\public\Kodikon3} */}
+                        <div className="flex flex-row">
+                            <a href="https://flowbite.com/" className="flex items-center h-10">
+                                {/* <img src={whitepeslogo} className="h-8 mr-3 text-white" alt="PES" /> */}
+                                <Image 
+                                    src={whitepeslogo}
+                                    className="md:w-[9vw] w-[14vw]"
+                                    alt=""
+                                />
+                            </a>
+                            <a href="https://flowbite.com/" className="flex items-center h-10">
+                                {/* <img src={whitepeslogo} className="h-8 mr-3 text-white" alt="PES" /> */}
+                                <Image 
+                                    src={whitelogo}
+                                    className="md:w-[9vw] w-[14vw]"
+                                    alt=""
+                                />
+                            </a>
+                        </div>
                         <div className="md:hidden flex flex-row items-center justify-center w-fit space-x-5">
-                            <span className="text-white bg-white p-2 rounded-lg bg-opacity-25">
+                            <button className="text-white bg-white p-2 rounded-lg bg-opacity-25 w-[20vw] h-[10vw]" style={{
+                                fontSize: "3vw"
+                            }}>
                                 Register!
-                            </span>
+                            </button>
                             <button
                                 className={`p-2 text-gray-700 rounded-md outline-none focus:border-gray-400 transition ease-in-out duration-100 ${navbar && 'animate-bounce'} ${!navbar && 'animate-pulse'}`}
                                 onClick={() => setNavbar(!navbar)}
@@ -80,33 +100,27 @@ export const NavbarKodikon3 = () => {
                     >
                         <ul className="items-center justify-center space-y-8 md:flex md:space-x-3 lg:space-x-6 md:space-y-0">
                             <li className="text-white text-xs lg:text-[16px]">
-                                <Link href="/">About</Link>
+                                <Link href="/kodikon-3/#about">About</Link>
                             </li>
                             <li className="text-white text-xs lg:text-[16px]">
-                                <Link href="/">History</Link>
+                                <Link href="/kodikon-3/#theme">Themes</Link>
                             </li>
                             <li className="text-white text-xs lg:text-[16px]">
-                                <Link href="/">Sponsors</Link>
+                                <Link href="/kodikon-3/#timeline">Timeline</Link>
                             </li>
                             <li className="text-white text-xs lg:text-[16px]">
-                                <Link href="/">FAQ</Link>
+                                <Link href="/kodikon-3/#sponser">Sponsers</Link>
                             </li>
-                            
+                            <li className="text-white text-xs lg:text-[16px]">
+                                <Link href="/kodikon-3/#faq">FAQ</Link>
+                            </li>
+
                         </ul>
                     </div>
                 </div>
-                <div className="hidden space-x-2 md:inline-block">
-                    <a href="https://flowbite.com/" className="flex items-center">
-                        <img src="https://flowbite.com/docs/images/logo.svg" className="h-8 mr-3" alt="Flowbite Logo" />
-                        <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Embrione</span>
-                    </a>
-                </div>
             </div>
         </nav>
-
-
-
-
+        </>
     );
 };
 

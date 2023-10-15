@@ -8,13 +8,12 @@ import { kodikonEvents } from '@/constants';
 
 const EventTimeline = () => {
   return (
-    <div className="flex flex-col w-full gap-y-9" >
-      <TitleComponent titleData="Kodikon 3.0 Timeline" />
+    <div id="#timeline" className="flex flex-col w-full gap-y-9" >
+      <TitleComponent titleData="Kodikon 3.0 Timeline" id="timeline" />
       <VerticalTimeline lineColor='#fff'>
         {
           kodikonEvents?.map((event, index) => (
-            <EventTimelineComponent eventTitle={event.eventName} eventTimings={event.eventTime} eventDescription={event.eventDescription} miscellaneous={event.miscellaneous} />
-
+            <EventTimelineComponent key={index} eventTitle={event.eventName} eventTimings={event.eventTime} eventDescription={event.eventDescription} miscellaneous={event.miscellaneous} />
           ))
         }
       </VerticalTimeline>
