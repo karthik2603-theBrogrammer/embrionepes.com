@@ -199,27 +199,33 @@ export const socialLinks = [
 
 export const kodikonEvents = [
   {
-    eventTitle: "Event 1",
-    eventTimings: "Event 1",
-    eventDescription: "Event 1",
+    eventTitle: "REGISTRATION STARTS",
+    eventTimings: "16TH OCTOBER",
+    eventDescription: "Kodikon 3.0, The third edition of our 24-hour highly successful flagship national level hackathon, Is opening it's Registraion from 16 th October.Hurry up! Slots are Open ,Log youself.",
     miscellaneous: "Event 1",
   },
   {
-    eventTitle: "Event 1",
-    eventTimings: "Event 1",
-    eventDescription: "Event 1",
+    eventTitle: "REGISTRATION CLOSED",
+    eventTimings: "26TH OCTOBER",
+    eventDescription: "The REGISTRATION are going to be closed on 26 th Qctober, Mark you REGISTRATION if not yet done... ",
     miscellaneous: "Event 1",
   },
   {
-    eventTitle: "Event 1",
-    eventTimings: "Event 1",
-    eventDescription: "Event 1",
+    eventTitle: "SHORTLISTING OF THE TEAMS FOR THE EVENT",
+    eventTimings: "27TH OCTOBER ",
+    eventDescription: "Choosing Of the Teams for the Event based on the Response Submitted.",
     miscellaneous: "Event 1",
   },
   {
-    eventTitle: "Event 1",
-    eventTimings: "Event 1",
-    eventDescription: "Event 1",
+    eventTitle: "ANNOUNCING DAY IF THE SHORTLISTED TEAMS",
+    eventTimings: "28TH OCTOBER",
+    eventDescription: "Teams SHORTLISTED for the OFFLINE EVENT, Get ready!",
+    miscellaneous: "Event 1",
+  },
+  {
+    eventTitle: "KODIKON 3.0 - THE EVENT DAY.",
+    eventTimings: "4-5TH NOVEMBER",
+    eventDescription: "The main Event Day, Teams Compete and Hack the Event.",
     miscellaneous: "Event 1",
   },
 ];
