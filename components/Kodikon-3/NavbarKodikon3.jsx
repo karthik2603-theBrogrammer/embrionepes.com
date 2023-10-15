@@ -51,9 +51,7 @@ export const NavbarKodikon3 = () => {
                             </a>
                         </div>
                         <div className="md:hidden flex flex-row items-center justify-center w-fit space-x-5">
-                            <button className="text-white bg-white p-2 rounded-lg bg-opacity-25 w-[20vw] h-[10vw]" style={{
-                                fontSize: "3vw"
-                            }}>
+                            <button className="text-white bg-white p-3 rounded-lg bg-opacity-25 h-fit w-fit  text-sm md:text-xl" >
                                 Register!
                             </button>
                             <button
