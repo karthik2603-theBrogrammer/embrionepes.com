@@ -61,7 +61,9 @@ const ContactUs = () => {
     // resetField("message");
   };
   return (
-    <div className="p-5 md:p-[110px] flex flex-col relative items-center justify-center">
+    <div className="p-5 md:p-[110px] flex flex-col relative items-center justify-center"
+    id="contact"
+    >
       <h1
         className="text-white md:text-7xl text-5xl py-6 text-center mb-5"
         data-aos="zoom-in-up"

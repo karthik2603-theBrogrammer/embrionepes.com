@@ -16,6 +16,7 @@ const Announcements = () => {
     <div
       className="p-5 md:p-[110px] flex flex-col relative items-center justify-center"
       style={{ scale }}
+      id = 'announcements'
     >
       <div
         className="flex flex-col md:flex-row items-center justify-center w-fit h-fit md:space-x-3"

@@ -199,36 +199,37 @@ export const socialLinks = [
 
 export const kodikonEvents = [
   {
-    eventTitle: "Registration Starts",
-    eventTimings: "16 TH OCTOBER",
-    eventDescription: "Kodikon 3.0, The third edition of our 24-hour highly successful flagship national level hackathon, Is opening it's Registraion from 16 th October.Hurry up! Slots are Open ,Log youself.",
-    miscellaneous: "Event 1",
+    "eventTitle": "Registrations Begin",
+    "eventTimings": "16th October 2023",
+    "eventDescription": "Kodikon 3.0, the third edition of our 24-hour highly successful flagship national-level hackathon, is opening its registration from 16th October. Hurry up! Slots are open. Log yourself in.",
+    "miscellaneous": "Event 1"
   },
   {
-    eventTitle: "Registration Closed",
-    eventTimings: "26 TH OCTOBER",
-    eventDescription: "The Registration are going to be closed on 26 th October, Mark you Registration if not done yet... ",
-    miscellaneous: "Event 1",
+    "eventTitle": "Registrations Close",
+    "eventTimings": "26th October 2023",
+    "eventDescription": "The registrations are going to be closed on 26th October. Register if you have not already!",
+    "miscellaneous": "Event 1"
   },
   {
-    eventTitle: "Shortlisting Of The Teams For The Event.",
-    eventTimings: "27 TH OCTOBER ",
-    eventDescription: "Choosing Of the Teams for the Event based on the Response Submitted.",
-    miscellaneous: "Event 1",
+    "eventTitle": "Shortlisting the best teams",
+    "eventTimings": "27th October 2023",
+    "eventDescription": "Selecting the top contestants based on their ideas.",
+    "miscellaneous": "Event 1"
   },
   {
-    eventTitle: "Announcing Day If The Shortlisted Teams.",
-    eventTimings: "28 TH OCTOBER",
-    eventDescription: "Teams shortlisted for the offline event, Get ready!",
-    miscellaneous: "Event 1",
+    "eventTitle": "Announcing the Shortlisted Teams",
+    "eventTimings": "28th October 2023",
+    "eventDescription": "Teams shortlisted for the offline event, get ready!",
+    "miscellaneous": "Event 1"
   },
   {
-    eventTitle: "Kodikon 3.0 - The Event Day.",
-    eventTimings: "4 TH and 5 TH NOVEMBER",
-    eventDescription: "The Main event day, Teams compete and Hack the event.",
-    miscellaneous: "Event 1",
-  },
+    "eventTitle": "Kodikon 3.0 - The Main Event!",
+    "eventTimings": "4th and 5th November 2023",
+    "eventDescription": "The main event day! Teams compete and hack the event.",
+    "miscellaneous": "Event 1"
+  }
 ];
+
 
 export const sponsors = [
   // {

@@ -11,7 +11,8 @@ const AboutUs = () => {
   const { scrollYProgress, scrollY } = useScroll();
   const scale = useTransform(scrollYProgress, [1, 0], [0.0001, 1]);
   return (
-    <div className="p-5 md:px-[130px] flex flex-col relative ">
+    <div className="p-5 md:px-[130px] flex flex-col relative "
+    id="about">
       <div
         className="blue__gradient absolute md:top-[-450px] md:right-[600px] h-[300px] w-[250px] md:h-[500px] md:w-[600px] "
         data-aos="zoom-in"

@@ -13,7 +13,7 @@ const EventTimeline = () => {
       <VerticalTimeline lineColor='#fff'>
         {
           kodikonEvents?.map((event, index) => (
-            <EventTimelineComponent key={index} eventTitle={event.eventName} eventTimings={event.eventTime} eventDescription={event.eventDescription} miscellaneous={event.miscellaneous} />
+            <EventTimelineComponent key={index} index = {index} eventTitle={event.eventTitle} eventTimings={event.eventTimings} eventDescription={event.eventDescription} miscellaneous={event.miscellaneous} />
           ))
         }
       </VerticalTimeline>
