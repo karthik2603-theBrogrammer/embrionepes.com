@@ -31,7 +31,7 @@ export const HackathonThemesCard = ({ children }) => {
 				}
 			}}
 			onMouseMove={onMouseMove}
-			className="overflow-hidden relative duration-700 border rounded-xl hover:bg-zinc-300/10 group md:gap-8 hover:border-zinc-400/50 border-zinc-600 mx-12 md:mx-3 "
+			className=" overflow-hidden relative duration-700 border rounded-xl hover:bg-zinc-300/10 group md:gap-8 hover:border-zinc-400/50 border-zinc-600 mx-12 md:mx-3 "
 			animate={cardControls}
 			onMouseEnter={() => {
 				cardControls.start("up");	
@@ -66,7 +66,7 @@ export const Article= ({ title, description, themeNumber }) => {
 
 			<article className="p-4 md:p-8">
 				<div className="flex justify-between gap-2 items-center">
-					<span className="text-xs duration-1000 text-zinc-200 group-hover:text-white group-hover:border-zinc-200 drop-shadow-orange">
+					<span className="text-xs my-1 duration-1000 text-zinc-200 group-hover:text-white group-hover:border-zinc-200 drop-shadow-orange">
 						<span>{themeNumber}</span>
 					</span>
 					{/* <span className="text-zinc-500 text-xs  flex items-center gap-1">

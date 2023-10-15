@@ -14,7 +14,6 @@ const EventTimeline = () => {
         {
           kodikonEvents?.map((event, index) => (
             <EventTimelineComponent key={index} eventTitle={event.eventName} eventTimings={event.eventTime} eventDescription={event.eventDescription} miscellaneous={event.miscellaneous} />
-
           ))
         }
       </VerticalTimeline>
