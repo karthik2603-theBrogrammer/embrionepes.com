@@ -2,6 +2,8 @@
 "use client";
 import {
 	motion,
+	useAnimation,
+	useInView,
 	useMotionTemplate,
 	useMotionValue,
 	useSpring,
@@ -9,10 +11,13 @@ import {
 import Link from "next/link";
 import { MouseEventHandler, PropsWithChildren } from "react";
 import { Eye } from "lucide-react";
+import { useRef } from "react";
 
 export const HackathonThemesCard = ({ children }) => {
 	const mouseX = useSpring(0, { stiffness: 500, damping: 100 });
 	const mouseY = useSpring(0, { stiffness: 500, damping: 100 });
+
+	const cardControls = useAnimation();
 
 	function onMouseMove({ currentTarget, clientX, clientY }) {
 		const { left, top } = currentTarget.getBoundingClientRect();
@@ -23,9 +28,25 @@ export const HackathonThemesCard = ({ children }) => {
 	let style = { maskImage, WebkitMaskImage: maskImage };
 
 	return (
-		<div
+		<motion.div			
+			variants={{
+				normal: {
+					scale: 1
+				},
+				up: {
+					scale: 1.05
+				}
+			}}
 			onMouseMove={onMouseMove}
 			className="overflow-hidden relative duration-700 border rounded-xl hover:bg-zinc-300/10 group md:gap-8 hover:border-zinc-400/50 border-zinc-600 mx-12 md:mx-3 "
+			animate={cardControls}
+			onMouseEnter={() => {
+				cardControls.start("up");	
+			}}
+			onMouseLeave={() => {
+				cardControls.start("normal");
+			}}
+			initial="normal"
 		>
 			<div className="pointer-events-none">
 				<div className="absolute inset-0 z-0  transition duration-1000 [mask-image:linear-gradient(black,transparent)]" />
@@ -40,7 +61,7 @@ export const HackathonThemesCard = ({ children }) => {
 			</div>
 
 			{children}
-		</div>
+		</motion.div>
 	);
 };
 
