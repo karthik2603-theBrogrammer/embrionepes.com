@@ -199,33 +199,33 @@ export const socialLinks = [
 
 export const kodikonEvents = [
   {
-    eventTitle: "REGISTRATION STARTS",
-    eventTimings: "16TH OCTOBER",
+    eventTitle: "Registration Starts",
+    eventTimings: "16 TH OCTOBER",
     eventDescription: "Kodikon 3.0, The third edition of our 24-hour highly successful flagship national level hackathon, Is opening it's Registraion from 16 th October.Hurry up! Slots are Open ,Log youself.",
     miscellaneous: "Event 1",
   },
   {
-    eventTitle: "REGISTRATION CLOSED",
-    eventTimings: "26TH OCTOBER",
-    eventDescription: "The REGISTRATION are going to be closed on 26 th Qctober, Mark you REGISTRATION if not yet done... ",
+    eventTitle: "Registration Closed",
+    eventTimings: "26 TH OCTOBER",
+    eventDescription: "The Registration are going to be closed on 26 th October, Mark you Registration if not done yet... ",
     miscellaneous: "Event 1",
   },
   {
-    eventTitle: "SHORTLISTING OF THE TEAMS FOR THE EVENT",
-    eventTimings: "27TH OCTOBER ",
+    eventTitle: "Shortlisting Of The Teams For The Event.",
+    eventTimings: "27 TH OCTOBER ",
     eventDescription: "Choosing Of the Teams for the Event based on the Response Submitted.",
     miscellaneous: "Event 1",
   },
   {
-    eventTitle: "ANNOUNCING DAY IF THE SHORTLISTED TEAMS",
-    eventTimings: "28TH OCTOBER",
-    eventDescription: "Teams SHORTLISTED for the OFFLINE EVENT, Get ready!",
+    eventTitle: "Announcing Day If The Shortlisted Teams.",
+    eventTimings: "28 TH OCTOBER",
+    eventDescription: "Teams shortlisted for the offline event, Get ready!",
     miscellaneous: "Event 1",
   },
   {
-    eventTitle: "KODIKON 3.0 - THE EVENT DAY.",
-    eventTimings: "4-5TH NOVEMBER",
-    eventDescription: "The main Event Day, Teams Compete and Hack the Event.",
+    eventTitle: "Kodikon 3.0 - The Event Day.",
+    eventTimings: "4 TH and 5 TH NOVEMBER",
+    eventDescription: "The Main event day, Teams compete and Hack the event.",
     miscellaneous: "Event 1",
   },
 ];
