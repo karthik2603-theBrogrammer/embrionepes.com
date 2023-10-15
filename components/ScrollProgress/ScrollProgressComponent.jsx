@@ -7,7 +7,7 @@ export default function ScrollProgressComponent() {
   return (
     <>
       <motion.div
-        className="progress-bar"
+        className="progress-bar backdrop-blur"
         style={{ scaleX: scrollYProgress }}
       />
     </>

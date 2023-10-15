@@ -9,8 +9,14 @@ const renderer = ({ days, hours, minutes, seconds, completed }) => {
         return <div className="h-fit my-32 px-2"><h1 className="text-white text-5xl md:text-6xl lg:text-8xl text-center"><span className="gradient-text-animation">Kodikon 3.0</span> Registerations Open!</h1></div>;
     } else {
         return <div className="h-fit my-32 px-2 flex flex-col items-center justify-center gap-y-8">
-            <h1 className="text-white text-5xl md:text-6xl lg:text-8xl text-center">Registerations Open In:</h1>
-            <h1 className=" text-4xl md:text-6xl lg:text-8xl text-center bg-clip-text text-gray-200">{days}d:{hours}h:{minutes}min:{seconds}s</h1>
+            <h1 className="text-white text-5xl md:text-6xl lg:text-8xl text-center">Registerations Open In</h1>
+            <div className="flex gap-5 text-gray-200">
+            <div><span className="text-4xl md:text-6xl lg:text-7xl text-center bg-clip-text">{days}</span>days</div> 
+            <div><span className="text-4xl md:text-6xl lg:text-7xl text-center bg-clip-text">{hours}</span>hours</div> 
+            <div><span className="text-4xl md:text-6xl lg:text-7xl text-center bg-clip-text">{minutes}</span>min</div> 
+            <div><span className="text-4xl md:text-6xl lg:text-7xl text-center bg-clip-text">{seconds}</span>sec</div>
+            </div>
+{/* <h1 className=" text-4xl md:text-6xl lg:text-8xl text-center bg-clip-text text-gray-200">{days}d:{hours}h:{minutes}min:{seconds}s</h1> */}
         </div>;
     }
 };
