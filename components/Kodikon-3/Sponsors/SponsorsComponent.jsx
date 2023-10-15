@@ -4,7 +4,7 @@ import TitleComponent from '../HelperComponents/TitleComponent'
 import { sponsors } from '@/constants'
 const SponsorCard = ({ sponsorName, sponsorImageURL, sponsorWebsiteURL }) => {
   return (
-    <div className="flex flex-col items-center justify-center p-2  h-9 w-9 rounded-lg hover:scale-150 transition ease-out duration-200  heartbeat ">
+    <div className="flex flex-col items-center justify-center p-2  h-100 w-100 rounded-lg hover:scale-150 transition ease-out duration-200  heartbeat ">
       <Image src={sponsorImageURL} alt={sponsorName} height={200} width={200} />
     </div>
   )
