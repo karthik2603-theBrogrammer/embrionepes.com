@@ -1,17 +1,10 @@
-
 "use client";
 import {
 	motion,
 	useAnimation,
-	useInView,
 	useMotionTemplate,
-	useMotionValue,
 	useSpring,
 } from "framer-motion";
-import Link from "next/link";
-import { MouseEventHandler, PropsWithChildren } from "react";
-import { Eye } from "lucide-react";
-import { useRef } from "react";
 
 export const HackathonThemesCard = ({ children }) => {
 	const mouseX = useSpring(0, { stiffness: 500, damping: 100 });

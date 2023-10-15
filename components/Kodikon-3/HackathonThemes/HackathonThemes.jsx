@@ -38,10 +38,11 @@ const HackathonThemes = () => {
   return (
     <div className="flex flex-col w-full h-fit gap-8 py-8 ">
       <TitleComponent titleData="Hackathon Themes" />
-      <div ref={themeGrid} class="w-full grid grid-cols-1 md:grid-cols-2 items-center justify-center gap-9">
+      <div ref={themeGrid} className="w-full grid grid-cols-1 md:grid-cols-2 items-center justify-center gap-9">
         {
           themes.map((item, index) => (
             <motion.div
+                key={index}
                 variants={{
                   hidden: { opacity: 0, y:50 },
                   visible: { opacity: 1, y: 0 }
@@ -50,7 +51,7 @@ const HackathonThemes = () => {
                 animate={controls}
                 transition={{ duration: 1 }}
             >
-              <HackathonThemesCard key={index}>
+              <HackathonThemesCard>
                 <Article title={item.title} description = {item.description} themeNumber = {` ${index + 1}`} />
               </HackathonThemesCard>
             </motion.div>
