@@ -14,6 +14,8 @@ const HeroComponent = () => {
           <Image
             src={leftguy}
             alt=""
+            data-aos="fade-in-left"
+        data-aos-duration="2500"
             className='h-[100%]'
           />
 
@@ -24,6 +26,8 @@ const HeroComponent = () => {
               src={copyofcopy}
               alt="Kodikon 3.0"
               className='h-fit w-fit'
+              data-aos="fade-in"
+        // data-aos-duration="500"
             />
           </div>
           <div className='top-0 absolute flex flex-row justify-around items-center w-[90vw] h-[90vh] '>
@@ -32,6 +36,9 @@ const HeroComponent = () => {
                 src={fifteen}
                 className='relative z-100'
                 alt=""
+                data-aos="fade-in"
+        data-aos-duration="500"
+        data-aos-delay='1000'
               />
             </div>
             <div className='w-[16vw]'>
@@ -39,6 +46,9 @@ const HeroComponent = () => {
                 src={fourteen}
                 className='relative z-100'
                 alt=""
+                data-aos="fade-in"
+        data-aos-duration="500"
+        data-aos-delay = '1000'
               />
             </div>
           </div>
@@ -48,6 +58,8 @@ const HeroComponent = () => {
             src={rightguy}
             alt=""
             className='h-[100%]'
+            data-aos="fade-in-right"
+        data-aos-duration="2500"
           />
         </div>
       </div>
