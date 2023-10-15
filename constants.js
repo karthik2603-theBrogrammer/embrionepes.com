@@ -18,14 +18,14 @@ export const domainDetails = [
     domainName: "Logistics",
     headsAndPhotos: [
       {
-        domainHead: "Naresh Srinivas",
-        domainHeadPhoto: "/domiainHeadPhotos/naresh.jpg",
-        linkedInURL: "https://www.linkedin.com/in/naresh-srinivas-28a608215/",
+        domainHead: "Thanush J Lodha",
+        domainHeadPhoto: "/NewNewDomainHeadPhotos/ThanushJLodha_Logistics.jpg",
+        linkedInURL: "https://in.linkedin.com/in/thanush-lodha-575a43256/",
       },
       {
-        domainHead: "Chaitra Upadhya",
-        domainHeadPhoto: "/domiainHeadPhotos/chaitra.jpeg",
-        linkedInURL: "https://www.linkedin.com/in/chaitra-upadhya-922426211/",
+        domainHead: "Shobith",
+        domainHeadPhoto: "/",
+        linkedInURL: "/",
       },
     ],
   },
@@ -33,9 +33,14 @@ export const domainDetails = [
     domainName: "Event Management",
     headsAndPhotos: [
       {
-        domainHead: "Punarv Dinakar",
-        domainHeadPhoto: "/domiainHeadPhotos/punarv.jpeg",
-        linkedInURL: "goto-linkedin",
+        domainHead: "Anveesha Nayak",
+        domainHeadPhoto: "/NewDomainHeadPhotos/Anvesha_Nayak_Event_Head.jpg",
+        linkedInURL: "https://in.linkedin.com/in/anvesha-nayak-41076324b/",
+      },
+      {
+        domainHead: "Gagan H R",
+        domainHeadPhoto: "/NewDomainHeadPhotos/Gagan H R_Event Head.jpg",
+        linkedInURL: "https://in.linkedin.com/in/gaganhr?trk=public_profile_browsemap/",
       },
     ],
   },
@@ -43,10 +48,17 @@ export const domainDetails = [
     domainName: "Marketing and Sponsorship",
     headsAndPhotos: [
       {
-        domainHead: "Swikrit Laxmishekhar",
-        domainHeadPhoto: "/domiainHeadPhotos/swikrit.jpg",
+        domainHead: "Krishna Sudarshan",
+        domainHeadPhoto: "/NewDomainHeadPhotos/Krishna Sudarshan _ Marketing.jpg",
         linkedInURL:
-          "https://www.linkedin.com/in/swikrit-laxmishekhar-546878225/",
+          "https:https://in.linkedin.com/in/krishna-sudarshan-0a2399187/",
+      },
+        
+      {
+        domainHead: "Pari Maheshwari",
+        domainHeadPhoto: "/NewDomainHeadPhotos/Pari Maheshwari_Marketing.jpg",
+        linkedInURL:
+          "",
       },
     ],
   },
@@ -54,9 +66,9 @@ export const domainDetails = [
     domainName: "Hospitality",
     headsAndPhotos: [
       {
-        domainHead: "Rhea Sudheer",
-        domainHeadPhoto: "/domiainHeadPhotos/rhea.jpg",
-        linkedInURL: "https://www.linkedin.com/in/rhea-sudheer/",
+        domainHead: "",
+        domainHeadPhoto: "/",
+        linkedInURL: "/",
       },
     ],
   },
@@ -64,9 +76,9 @@ export const domainDetails = [
     domainName: "Design",
     headsAndPhotos: [
       {
-        domainHead: "Yogitha H K",
-        domainHeadPhoto: "/domiainHeadPhotos/yogitha.jpg",
-        linkedInURL: "https://www.linkedin.com/in/yogitha-h-k-63bb74222/",
+        domainHead: "Kousthubha G K",
+        domainHeadPhoto: "/NewDomainHeadPhotos/Kousthubha_GK_design.jpg",
+        linkedInURL: "https://in.linkedin.com/in/kousthubha-gk-607b74254/",
       },
     ],
   },
@@ -74,9 +86,9 @@ export const domainDetails = [
     domainName: "Operations",
     headsAndPhotos: [
       {
-        domainHead: "Harsh Verma",
-        domainHeadPhoto: "/domiainHeadPhotos/harsh.jpg",
-        linkedInURL: "https://www.linkedin.com/in/harsh-verma-857b801b9/",
+        domainHead: "Shikhar Jaiswal",
+        domainHeadPhoto: "/NewDomainHeadPhotos/Shikhar Jaiswal_Operations.jpg",
+        linkedInURL: "https://in.linkedin.com/in/shikhar-jaiswal-108584240/",
       },
     ],
   },
