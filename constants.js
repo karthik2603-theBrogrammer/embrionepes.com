@@ -199,100 +199,111 @@ export const socialLinks = [
 
 export const kodikonEvents = [
   {
-    eventTitle: "Event 1",
-    eventTimings: "Event 1",
-    eventDescription: "Event 1",
+    eventTitle: "Registration Starts",
+    eventTimings: "16 TH OCTOBER",
+    eventDescription: "Kodikon 3.0, The third edition of our 24-hour highly successful flagship national level hackathon, Is opening it's Registraion from 16 th October.Hurry up! Slots are Open ,Log youself.",
     miscellaneous: "Event 1",
   },
   {
-    eventTitle: "Event 1",
-    eventTimings: "Event 1",
-    eventDescription: "Event 1",
+    eventTitle: "Registration Closed",
+    eventTimings: "26 TH OCTOBER",
+    eventDescription: "The Registration are going to be closed on 26 th October, Mark you Registration if not done yet... ",
     miscellaneous: "Event 1",
   },
   {
-    eventTitle: "Event 1",
-    eventTimings: "Event 1",
-    eventDescription: "Event 1",
+    eventTitle: "Shortlisting Of The Teams For The Event.",
+    eventTimings: "27 TH OCTOBER ",
+    eventDescription: "Choosing Of the Teams for the Event based on the Response Submitted.",
     miscellaneous: "Event 1",
   },
   {
-    eventTitle: "Event 1",
-    eventTimings: "Event 1",
-    eventDescription: "Event 1",
+    eventTitle: "Announcing Day If The Shortlisted Teams.",
+    eventTimings: "28 TH OCTOBER",
+    eventDescription: "Teams shortlisted for the offline event, Get ready!",
+    miscellaneous: "Event 1",
+  },
+  {
+    eventTitle: "Kodikon 3.0 - The Event Day.",
+    eventTimings: "4 TH and 5 TH NOVEMBER",
+    eventDescription: "The Main event day, Teams compete and Hack the event.",
     miscellaneous: "Event 1",
   },
 ];
 
 export const sponsors = [
+  // {
+  //   category: "Title Sponsors",
+  //   categorySponsors: [
+  //     {
+  //       name: "Title Sponsor 1",
+  //       imageUrl: "",
+  //       sponsorWebsiteURL:""
+  //     },
+  //   ],
+  // },
   {
-    category: "Title Sponsors",
+    category: "Tech Sponsors",
     categorySponsors: [
       {
-        name: "Title Sponsor 1",
-        imageUrl: "",
+        name: "1password",
+        imageUrl: "/Sponsor/1password.png",
         sponsorWebsiteURL:""
       },
+      {
+        name: "Axure",
+        imageUrl: "/Sponsor/Axure.png",
+        sponsorWebsiteURL:""
+      },
+      {
+        name: "echo3D",
+        imageUrl: "/sponsor/echo3D.png",
+        sponsorWebsiteURL:""
+      },
+      {
+        name: "Wolfram",
+        imageUrl: "/sponsor/wolfram.png",
+        sponsorWebsiteURL:""
+      }
     ],
   },
-  {
-    category: "Category1",
-    categorySponsors: [
-      {
-        name: "Sponsor 1",
-        imageUrl: "",
-        sponsorWebsiteURL:""
-      },
-      {
-        name: "Sponsor 1",
-        imageUrl: "",
-        sponsorWebsiteURL:""
-      },
-      {
-        name: "Sponsor 1",
-        imageUrl: "",
-        sponsorWebsiteURL:""
-      },
-    ],
-  },
-  {
-    category: "Category2",
-    categorySponsors: [
-      {
-        name: "Sponsor 1",
-        imageUrl: "",
-        sponsorWebsiteURL:""
-      },
-      {
-        name: "Sponsor 1",
-        imageUrl: "",
-        sponsorWebsiteURL:""
-      },
-      {
-        name: "Sponsor 1",
-        imageUrl: "",
-        sponsorWebsiteURL:""
-      },
-    ],
-  },
-  {
-    category: "Category3",
-    categorySponsors: [
-      {
-        name: "Sponsor 1",
-        imageUrl: "",
-        sponsorWebsiteURL:""
-      },
-      {
-        name: "Sponsor 1",
-        imageUrl: "",
-        sponsorWebsiteURL:""
-      },
-      {
-        name: "Sponsor 1",
-        imageUrl: "",
-        sponsorWebsiteURL:""
-      },
-    ],
-  },
+  // {
+  //   category: "Category2",
+  //   categorySponsors: [
+  //     {
+  //       name: "Sponsor 1",
+  //       imageUrl: "",
+  //       sponsorWebsiteURL:""
+  //     },
+  //     {
+  //       name: "Sponsor 1",
+  //       imageUrl: "",
+  //       sponsorWebsiteURL:""
+  //     },
+  //     {
+  //       name: "Sponsor 1",
+  //       imageUrl: "",
+  //       sponsorWebsiteURL:""
+  //     },
+  //   ],
+  // },
+  // {
+  //   category: "Category3",
+  //   categorySponsors: [
+  //     {
+  //       name: "Sponsor 1",
+  //       imageUrl: "",
+  //       sponsorWebsiteURL:""
+  //     },
+  //     {
+  //       name: "Sponsor 1",
+  //       imageUrl: "",
+  //       sponsorWebsiteURL:""
+  //     },
+  //     {
+  //       name: "Sponsor 1",
+  //       imageUrl: "",
+  //       sponsorWebsiteURL:""
+  //     },
+  //   ],
+  // },
 ];
