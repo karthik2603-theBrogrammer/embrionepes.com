@@ -2,7 +2,7 @@
 import TitleComponent from '../HelperComponents/TitleComponent'
 import Lottie from "lottie-react";
 import vortex from '../../../assets/kodikon-about-us.json'
-
+import Image from 'next/image';
 import React from 'react'
 const stats = [
     {
@@ -53,6 +53,7 @@ const AboutTheEvent = () => {
                         animationData={vortex}
                         style={{ height: 360, width: 360 }}
                     />
+                    {/* <Image src={'/astronaut.svg'} alt = '' height={700} width = {700} className = 'w-[1000px] h-[1000px]'/> */}
                 </div>
             </div>
         </div>

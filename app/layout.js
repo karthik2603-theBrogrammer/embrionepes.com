@@ -6,6 +6,7 @@ import "aos/dist/aos.css";
 import { Analytics } from "@vercel/analytics/react";
 
 
+
 export default function RootLayout({ children }) {
   useEffect(() => {
     AOS.init({
