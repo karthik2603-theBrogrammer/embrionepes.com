@@ -35,11 +35,11 @@ const stats = [
 // Move stats to the constants file.
 const AboutTheEvent = () => {
     return (
-        <div className='mt-20 h-fit  space-y-6 px-12 md:px-0'>
+        <div className='mt-20 h-fit  space-y-6  md:px-0'>
             <TitleComponent id="about" titleData={"About The Event"} />
             <div className="blue__gradient absolute md:top-[800px]  h-[350px] w-[350px] md:h-[400px] md:w-[450px] z-[-60] " />
             <div className="flex flex-col lg:flex-row items-center justify-center ">
-                <div className="">
+                <div className="p-6">
                     <p className="text-white text-justify p-4 md:text-xl">Kodikon 3.0, the third edition of our 24-hour highly successful flagship national level hackathon, aims at developing creative solutions to real-world problems while also promoting friendly, healthy competition amongst peers.
                         Open to all engineering undergraduates across the nation, this event ignites innovation, camaraderie, and healthy competition.
                         160+ participants will battle it out for the coveted prizes.

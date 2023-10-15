@@ -33,19 +33,19 @@ export const NavbarKodikon3 = () => {
                     <div className="flex items-center justify-between py-3 md:py-5 md:block">
                         {/* {D:\Embrione PES\Kodikon 3.0\embrionepes.com\public\Kodikon3} */}
                         <div className="flex flex-row">
-                            <a href="https://flowbite.com/" className="flex items-center h-10">
+                            <a href="/" className="flex items-center h-10">
                                 {/* <img src={whitepeslogo} className="h-8 mr-3 text-white" alt="PES" /> */}
                                 <Image 
                                     src={whitepeslogo}
-                                    className="md:w-[9vw] w-[14vw]"
+                                    className="w-[100px]"
                                     alt=""
                                 />
                             </a>
-                            <a href="https://flowbite.com/" className="flex items-center h-10">
+                            <a href="/" className="hidden md:flex items-center h-10 ">
                                 {/* <img src={whitepeslogo} className="h-8 mr-3 text-white" alt="PES" /> */}
                                 <Image 
                                     src={whitelogo}
-                                    className="md:w-[9vw] w-[14vw]"
+                                    className="md:w-[100px] w-[100px]"
                                     alt=""
                                 />
                             </a>
