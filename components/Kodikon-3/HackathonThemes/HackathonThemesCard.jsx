@@ -1,18 +1,16 @@
-
 "use client";
 import {
 	motion,
+	useAnimation,
 	useMotionTemplate,
-	useMotionValue,
 	useSpring,
 } from "framer-motion";
-import Link from "next/link";
-import { MouseEventHandler, PropsWithChildren } from "react";
-import { Eye } from "lucide-react";
 
 export const HackathonThemesCard = ({ children }) => {
 	const mouseX = useSpring(0, { stiffness: 500, damping: 100 });
 	const mouseY = useSpring(0, { stiffness: 500, damping: 100 });
+
+	const cardControls = useAnimation();
 
 	function onMouseMove({ currentTarget, clientX, clientY }) {
 		const { left, top } = currentTarget.getBoundingClientRect();
@@ -23,9 +21,25 @@ export const HackathonThemesCard = ({ children }) => {
 	let style = { maskImage, WebkitMaskImage: maskImage };
 
 	return (
-		<div
+		<motion.div			
+			variants={{
+				normal: {
+					scale: 1
+				},
+				up: {
+					scale: 1.05
+				}
+			}}
 			onMouseMove={onMouseMove}
-			className="overflow-hidden relative duration-700 border rounded-xl hover:bg-zinc-300/10 group md:gap-8 hover:border-zinc-400/50 border-zinc-600 mx-12 md:mx-3 "
+			className=" overflow-hidden relative duration-700 border rounded-xl hover:bg-zinc-300/10 group md:gap-8 hover:border-zinc-400/50 border-zinc-600 mx-12 md:mx-3 "
+			animate={cardControls}
+			onMouseEnter={() => {
+				cardControls.start("up");	
+			}}
+			onMouseLeave={() => {
+				cardControls.start("normal");
+			}}
+			initial="normal"
 		>
 			<div className="pointer-events-none">
 				<div className="absolute inset-0 z-0  transition duration-1000 [mask-image:linear-gradient(black,transparent)]" />
@@ -40,7 +54,7 @@ export const HackathonThemesCard = ({ children }) => {
 			</div>
 
 			{children}
-		</div>
+		</motion.div>
 	);
 };
 
@@ -52,7 +66,7 @@ export const Article= ({ title, description, themeNumber }) => {
 
 			<article className="p-4 md:p-8">
 				<div className="flex justify-between gap-2 items-center">
-					<span className="text-xs duration-1000 text-zinc-200 group-hover:text-white group-hover:border-zinc-200 drop-shadow-orange">
+					<span className="text-xs my-1 duration-1000 text-zinc-200 group-hover:text-white group-hover:border-zinc-200 drop-shadow-orange">
 						<span>{themeNumber}</span>
 					</span>
 					{/* <span className="text-zinc-500 text-xs  flex items-center gap-1">
