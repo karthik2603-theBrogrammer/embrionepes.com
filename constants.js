@@ -1,3 +1,86 @@
+export const oldDomainDetails = [
+  {
+    domainName: "Co-Founders",
+    headsAndPhotos: [
+      {
+        domainHead: "Vijit Kumar",
+        domainHeadPhoto: "/domiainHeadPhotos/vijit.jpg",
+        linkedInURL: "https://www.linkedin.com/in/vijit-kumar/",
+      },
+      {
+        domainHead: "Vishal J Lodha",
+        domainHeadPhoto: "/domiainHeadPhotos/vishal.jpeg",
+        linkedInURL: "https://www.linkedin.com/in/vishal-j-lodha",
+      },
+    ],
+  },
+  {
+    domainName: "Logistics",
+    headsAndPhotos: [
+      {
+        domainHead: "Naresh Srinivas",
+        domainHeadPhoto: "/domiainHeadPhotos/naresh.jpg",
+        linkedInURL: "https://www.linkedin.com/in/naresh-srinivas-28a608215/",
+      },
+      {
+        domainHead: "Chaitra Upadhya",
+        domainHeadPhoto: "/domiainHeadPhotos/chaitra.jpeg",
+        linkedInURL: "https://www.linkedin.com/in/chaitra-upadhya-922426211/",
+      },
+    ],
+  },
+  {
+    domainName: "Event Management",
+    headsAndPhotos: [
+      {
+        domainHead: "Punarv Dinakar",
+        domainHeadPhoto: "/domiainHeadPhotos/punarv.jpeg",
+        linkedInURL: "goto-linkedin",
+      },
+    ],
+  },
+  {
+    domainName: "Marketing and Sponsorship",
+    headsAndPhotos: [
+      {
+        domainHead: "Swikrit Laxmishekhar",
+        domainHeadPhoto: "/domiainHeadPhotos/swikrit.jpg",
+        linkedInURL:
+          "https://www.linkedin.com/in/swikrit-laxmishekhar-546878225/",
+      },
+    ],
+  },
+  {
+    domainName: "Hospitality",
+    headsAndPhotos: [
+      {
+        domainHead: "Rhea Sudheer",
+        domainHeadPhoto: "/domiainHeadPhotos/rhea.jpg",
+        linkedInURL: "https://www.linkedin.com/in/rhea-sudheer/",
+      },
+    ],
+  },
+  {
+    domainName: "Design",
+    headsAndPhotos: [
+      {
+        domainHead: "Yogitha H K",
+        domainHeadPhoto: "/domiainHeadPhotos/yogitha.jpg",
+        linkedInURL: "https://www.linkedin.com/in/yogitha-h-k-63bb74222/",
+      },
+    ],
+  },
+  {
+    domainName: "Operations",
+    headsAndPhotos: [
+      {
+        domainHead: "Harsh Verma",
+        domainHeadPhoto: "/domiainHeadPhotos/harsh.jpg",
+        linkedInURL: "https://www.linkedin.com/in/harsh-verma-857b801b9/",
+      },
+    ],
+  },
+];
 export const domainDetails = [
   {
     domainName: "Co-Founders",
@@ -18,14 +101,14 @@ export const domainDetails = [
     domainName: "Logistics",
     headsAndPhotos: [
       {
-        domainHead: "Thanush J Lodha",
-        domainHeadPhoto: "/NewNewDomainHeadPhotos/ThanushJLodha_Logistics.jpg",
-        linkedInURL: "https://in.linkedin.com/in/thanush-lodha-575a43256/",
+        domainHead: "Naresh Srinivas",
+        domainHeadPhoto: "/domiainHeadPhotos/naresh.jpg",
+        linkedInURL: "https://www.linkedin.com/in/naresh-srinivas-28a608215/",
       },
       {
-        domainHead: "Shobith",
-        domainHeadPhoto: "/",
-        linkedInURL: "/",
+        domainHead: "Chaitra Upadhya",
+        domainHeadPhoto: "/domiainHeadPhotos/chaitra.jpeg",
+        linkedInURL: "https://www.linkedin.com/in/chaitra-upadhya-922426211/",
       },
     ],
   },
@@ -33,14 +116,9 @@ export const domainDetails = [
     domainName: "Event Management",
     headsAndPhotos: [
       {
-        domainHead: "Anveesha Nayak",
-        domainHeadPhoto: "/NewDomainHeadPhotos/Anvesha_Nayak_Event_Head.jpg",
-        linkedInURL: "https://in.linkedin.com/in/anvesha-nayak-41076324b/",
-      },
-      {
-        domainHead: "Gagan H R",
-        domainHeadPhoto: "/NewDomainHeadPhotos/Gagan H R_Event Head.jpg",
-        linkedInURL: "https://in.linkedin.com/in/gaganhr?trk=public_profile_browsemap/",
+        domainHead: "Punarv Dinakar",
+        domainHeadPhoto: "/domiainHeadPhotos/punarv.jpeg",
+        linkedInURL: "goto-linkedin",
       },
     ],
   },
@@ -48,17 +126,10 @@ export const domainDetails = [
     domainName: "Marketing and Sponsorship",
     headsAndPhotos: [
       {
-        domainHead: "Krishna Sudarshan",
-        domainHeadPhoto: "/NewDomainHeadPhotos/Krishna Sudarshan _ Marketing.jpg",
+        domainHead: "Swikrit Laxmishekhar",
+        domainHeadPhoto: "/domiainHeadPhotos/swikrit.jpg",
         linkedInURL:
-          "https:https://in.linkedin.com/in/krishna-sudarshan-0a2399187/",
-      },
-        
-      {
-        domainHead: "Pari Maheshwari",
-        domainHeadPhoto: "/NewDomainHeadPhotos/Pari Maheshwari_Marketing.jpg",
-        linkedInURL:
-          "",
+          "https://www.linkedin.com/in/swikrit-laxmishekhar-546878225/",
       },
     ],
   },
@@ -66,9 +137,9 @@ export const domainDetails = [
     domainName: "Hospitality",
     headsAndPhotos: [
       {
-        domainHead: "",
-        domainHeadPhoto: "/",
-        linkedInURL: "/",
+        domainHead: "Rhea Sudheer",
+        domainHeadPhoto: "/domiainHeadPhotos/rhea.jpg",
+        linkedInURL: "https://www.linkedin.com/in/rhea-sudheer/",
       },
     ],
   },
@@ -76,9 +147,9 @@ export const domainDetails = [
     domainName: "Design",
     headsAndPhotos: [
       {
-        domainHead: "Kousthubha G K",
-        domainHeadPhoto: "/NewDomainHeadPhotos/Kousthubha_GK_design.jpg",
-        linkedInURL: "https://in.linkedin.com/in/kousthubha-gk-607b74254/",
+        domainHead: "Yogitha H K",
+        domainHeadPhoto: "/domiainHeadPhotos/yogitha.jpg",
+        linkedInURL: "https://www.linkedin.com/in/yogitha-h-k-63bb74222/",
       },
     ],
   },
@@ -86,9 +157,9 @@ export const domainDetails = [
     domainName: "Operations",
     headsAndPhotos: [
       {
-        domainHead: "Shikhar Jaiswal",
-        domainHeadPhoto: "/NewDomainHeadPhotos/Shikhar Jaiswal_Operations.jpg",
-        linkedInURL: "https://in.linkedin.com/in/shikhar-jaiswal-108584240/",
+        domainHead: "Harsh Verma",
+        domainHeadPhoto: "/domiainHeadPhotos/harsh.jpg",
+        linkedInURL: "https://www.linkedin.com/in/harsh-verma-857b801b9/",
       },
     ],
   },
@@ -223,7 +294,7 @@ export const kodikonEvents = [
     "miscellaneous": "Event 1"
   },
   {
-    "eventTitle": "Shortlisting the best teams",
+    "eventTitle": "Shortlisting the best teams!",
     "eventTimings": "27th October 2023",
     "eventDescription": "Selecting the top contestants based on their ideas.",
     "miscellaneous": "Event 1"
