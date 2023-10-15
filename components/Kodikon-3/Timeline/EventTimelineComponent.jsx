@@ -2,9 +2,10 @@ import React from 'react'
 import { VerticalTimelineElement } from 'react-vertical-timeline-component'
 import 'react-vertical-timeline-component/style.min.css';
 import { BsGoogle } from 'react-icons/bs';
-import { Eye } from 'lucide-react';
+import {  MonitorPlay, MonitorX, Layers, Mic2, TerminalSquare } from 'lucide-react';
 
-const EventTimelineComponent = ({eventTitle, eventDescription, eventTimings, miscellaneous}) => {
+const iconArray = [<MonitorPlay size='90px'/>, <MonitorX size='90px'/>, <Layers size='90px'/>, <Mic2 size='90px'/>, <TerminalSquare size='90px'/>]
+const EventTimelineComponent = ({ eventTitle, eventDescription, eventTimings, miscellaneous,index }) => {
   return (
     <VerticalTimelineElement
       contentStyle={{
@@ -14,21 +15,21 @@ const EventTimelineComponent = ({eventTitle, eventDescription, eventTimings, mis
         boxShadow: "0 0 18px 1px #214d76"
       }}
       contentArrowStyle={{ borderRight: "7px solid  #1d1836" }}
-      date={'6AM-9AM'}
+      date={eventTimings}
       iconStyle={{ background: '#fff' }}
       icon={
         <div className=' w-full h-full'>
-          <Eye size='90px'/>
+          {iconArray[index]}
         </div>
       }
     >
       <div>
-        <h3 className='text-white text-[24px] font-bold'>Event Name</h3>
+        <h3 className='text-white text-[25px] md:text-[30px] font-bold'>{eventTitle}</h3>
         <p
-          className='text-secondary text-[16px] font-semibold'
+          className='text-secondary text-[16px] font-semibold pt-5'
           style={{ margin: 0 }}
         >
-          Event Description
+          {eventDescription}
         </p>
       </div>
 

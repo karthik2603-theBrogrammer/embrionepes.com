@@ -40,8 +40,8 @@ const Footer = () => {
   return (
     <div
       className="w-screen h-[40vh] mt-9 flex md:flex-row flex-col justify-center items-center relative text-white space-y-6  "
-      data-aos="fade-down"
-      data-aos-duration="1000"
+      // data-aos="fade-down"
+      // data-aos-duration="1000"
     >
       <a href="https://pes.edu/" target="_blank">
         <Tilt defaultOptions={defaultOptions}>

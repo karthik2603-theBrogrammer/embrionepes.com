@@ -10,7 +10,7 @@ import EventTimeline from "@/components/Kodikon-3/Timeline/EventTimeline";
 import SponsorsComponent from "@/components/Kodikon-3/Sponsors/SponsorsComponent";
 import PrizesComponent from "@/components/Kodikon-3/Prizes/PrizesComponent";
 import Footer from "@/components/Footer/Footer";
-import  EventCountdown  from "@/components/Kodikon-3/Countdown/EventCountdown";
+import EventCountdown  from "@/components/Kodikon-3/Countdown/EventCountdown";
 export default function LandingPage() {
   return (
     <>
@@ -32,9 +32,6 @@ export default function LandingPage() {
 
       </div>
 
-      <div className="flex flex-col items-center justify-center sticky bottom-4 bg-transparent">
-        <BottomNavigationComponent />
-      </div>
     </>
   );
 }
