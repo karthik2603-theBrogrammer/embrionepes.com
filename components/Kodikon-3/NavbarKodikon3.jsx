@@ -112,6 +112,9 @@ export const NavbarKodikon3 = () => {
                             <li className="text-white text-xs lg:text-[16px]">
                                 <Link href="/kodikon-3/#faq">FAQ</Link>
                             </li>
+                            <li className="text-white text-xs lg:text-[16px]">
+                                <Link href="/#contact">Contact Us</Link>
+                            </li>
 
                         </ul>
                     </div>

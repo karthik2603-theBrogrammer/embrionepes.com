@@ -134,7 +134,7 @@ body::-webkit-scrollbar-thumb {
   top: 0;
   left: 0;
   right: 0;
-  height: 10px;
+  height: 2px;
   background: #00e1ff;
   transform-origin: 0%;
   z-index: 100;
