@@ -1,7 +1,7 @@
 "use client"
 import TitleComponent from '../HelperComponents/TitleComponent'
 import Lottie from "lottie-react";
-import vortex from '../../../assets/kodikon-about-us.json'
+import about from '../../../assets/about-kodikon.json'
 import Image from 'next/image';
 import React from 'react'
 const stats = [
@@ -50,8 +50,9 @@ const AboutTheEvent = () => {
                 <div className="grid place-items-center">
                     <Lottie
                         loop={true}
-                        animationData={vortex}
+                        animationData={about}
                         style={{ height: 360, width: 360 }}
+
                     />
                     {/* <Image src={'/astronaut.svg'} alt = '' height={700} width = {700} className = 'w-[1000px] h-[1000px]'/> */}
                 </div>
