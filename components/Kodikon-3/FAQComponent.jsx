@@ -61,9 +61,9 @@ const FAQ = () => {
   }, [isOpen, faqData, typingIntervals]);
 
   return (
-    <div className="flex flex-col w-full h-fit gap-6">
+    <div className="flex flex-col w-full h-fit gap-6" id="faq">
       <TitleComponent titleData={"Some Commonly asked question :"} />
-      <div className="flex flex-col gap-3 divide-y-2 divide-dashed px-2 md:px-0">
+      <div className="flex flex-col gap-3 divide-y-2 divide-dashed px-2 pt-5 md:px-0">
         {faqData.map((ele) => {
           return (
             <>
