@@ -11,6 +11,7 @@ import SponsorsComponent from "@/components/Kodikon-3/Sponsors/SponsorsComponent
 import PrizesComponent from "@/components/Kodikon-3/Prizes/PrizesComponent";
 import Footer from "@/components/Footer/Footer";
 import EventCountdown  from "@/components/Kodikon-3/Countdown/EventCountdown";
+import FAQ from "@/components/Kodikon-3/FAQComponent";
 export default function LandingPage() {
   return (
     <>
@@ -28,6 +29,7 @@ export default function LandingPage() {
         <EventTimeline/>
         <SponsorsComponent/>
         <PrizesComponent/>
+        <FAQ />
         <Footer/>
 
       </div>
