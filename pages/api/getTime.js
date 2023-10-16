@@ -3,6 +3,7 @@ export default async function getTime(req, res) {
   res.status(200).json({
     currentTime: Date.now(),
     registrationsBeginDate: date.getTime(),
+    timeLeft: 1697470200000
   });
 }
 
