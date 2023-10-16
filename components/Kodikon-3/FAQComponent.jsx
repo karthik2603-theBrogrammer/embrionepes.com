@@ -62,20 +62,20 @@ const FAQ = () => {
 
   return (
     <div className="flex flex-col w-full h-fit gap-6" id="faq">
-      <TitleComponent titleData={"Some Commonly asked question :"} />
-      <div className="flex flex-col gap-3 divide-y-2 divide-dashed px-2 pt-5 md:px-0">
+      <TitleComponent titleData={"FAQ"} />
+      <div className="flex flex-col gap-3 divide-y-2 divide-dashed px-2 pt-5 md:px-0 text-white">
         {faqData.map((ele) => {
           return (
             <>
               <div
-                className=" flex w-[100%] justify-between items-center text-xl md:text-2xl px-10 pt-3 cursor-pointer text-white"
+                className=" flex w-[100%] justify-between items-center text-xl md:text-2xl px-10 pt-3 cursor-pointer "
                 onClick={() => toggleOpen(ele.id)}
               >
-                <span className="w-[80%]">~$ {ele.question}</span>
+                <span className="w-[80%] ">~$ {ele.question}</span>
                 {isOpen[ele.id] ? <AiOutlineMinus /> : <AiOutlinePlus />}
               </div>
               {isOpen[ele.id] && (
-                <div className=" flex w-[100%] justify-between items-center md:text-xl px-12 p-3 bg-gray-300 rounded">
+                <div className="bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 my-4 flex w-[100%] justify-between items-center md:text-xl px-12 p-3  text-justify">
                   {" "}
                   {">>"} {displayedAnswer[ele.id]}
                 </div>

@@ -12,6 +12,7 @@ import PrizesComponent from "@/components/Kodikon-3/Prizes/PrizesComponent";
 import Footer from "@/components/Footer/Footer";
 import EventCountdown  from "@/components/Kodikon-3/Countdown/EventCountdown";
 import FAQ from "@/components/Kodikon-3/FAQComponent";
+import Map from "@/components/Kodikon-3/MapComponent";
 export default function LandingPage() {
   return (
     <>
@@ -30,6 +31,7 @@ export default function LandingPage() {
         <SponsorsComponent/>
         <PrizesComponent/>
         <FAQ />
+        <Map />
         <Footer/>
 
       </div>
