@@ -68,14 +68,14 @@ const FAQ = () => {
           return (
             <>
               <div
-                className=" flex w-[100%] justify-between items-center text-xl md:text-2xl px-10 pt-3 cursor-pointer"
+                className=" flex w-[100%] justify-between items-center text-xl md:text-2xl px-10 pt-3 cursor-pointer text-white"
                 onClick={() => toggleOpen(ele.id)}
               >
                 <span className="w-[80%]">~$ {ele.question}</span>
                 {isOpen[ele.id] ? <AiOutlineMinus /> : <AiOutlinePlus />}
               </div>
               {isOpen[ele.id] && (
-                <div className=" flex w-[100%] justify-between items-center md:text-xl px-12 pt-3">
+                <div className=" flex w-[100%] justify-between items-center md:text-xl px-12 p-3 bg-gray-300 rounded">
                   {" "}
                   {">>"} {displayedAnswer[ele.id]}
                 </div>
