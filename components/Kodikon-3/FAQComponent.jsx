@@ -10,27 +10,55 @@ const FAQ = () => {
   });
 
   const [isOpen, setIsOpen] = useState(initialOpenState);
-//   const [currentText, setCurrentText] = useState("");
-//   const [openText, setOpenText] = useState("");
-
-  
+  const [displayedAnswer, setDisplayedAnswer] = useState("");
+  const [typingIntervals, setTypingIntervals] = useState({});
 
   const toggleOpen = (id) => {
-    // if(!updatedState[id]) setOpenText("");
     setIsOpen((prevState) => {
       const updatedState = {};
       for (const key in prevState) {
         updatedState[key] = key === id ? !prevState[key] : false;
       }
-    //   setCurrentText("");
       return updatedState;
     });
+    if (!isOpen[id]) {
+        clearInterval(typingIntervals[id]);
+        const newTypingIntervals = { ...typingIntervals };
+        delete newTypingIntervals[id];
+        setTypingIntervals(newTypingIntervals);
+      }
   };
 
-//   useEffect(()=>{
-//     for()
-//   },[openText])
+  useEffect(() => {
+    const initialDisplayedAnswer = {};
+    faqData.forEach((ele) => {
+      initialDisplayedAnswer[ele.id] = "";
+    });
+    setDisplayedAnswer(initialDisplayedAnswer);
+    faqData.forEach((ele) => {
+        if (isOpen[ele.id]) {
+          if (!typingIntervals[ele.id]) {
+            const answerLength = ele.answer.length;
+            let currentIndex = 0;
+            const timer = setInterval(() => {
+              setDisplayedAnswer((prevDisplayedAnswer) => ({
+                ...prevDisplayedAnswer,
+                [ele.id]: ele.answer.slice(0, currentIndex + 1),
+              }));
+              currentIndex++;
+              if (currentIndex === answerLength) {
+                clearInterval(timer);
+              }
+            }, 30);
   
+            setTypingIntervals((prevTypingIntervals) => ({
+              ...prevTypingIntervals,
+              [ele.id]: timer,
+            }));
+          }
+        }
+      });
+  }, [isOpen, faqData, typingIntervals]);
 
   return (
     <div className="flex flex-col w-full h-fit gap-6">
@@ -49,7 +77,7 @@ const FAQ = () => {
               {isOpen[ele.id] && (
                 <div className=" flex w-[100%] justify-between items-center md:text-xl px-12 pt-3">
                   {" "}
-                  {">>"} {ele.answer}
+                  {">>"} {displayedAnswer[ele.id]}
                 </div>
               )}
             </>
