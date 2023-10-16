@@ -1,5 +1,5 @@
 'use client'
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import axios from 'axios';
 import Countdown from 'react-countdown';
 
@@ -25,14 +25,14 @@ const renderer = ({ days, hours, minutes, seconds, completed }) => {
 };
 
 const EventCountdown = () => {
-    const [timeLeft, setTimeLeft] = useState(null)
-    const date = new Date("2023-10-16T21:00:00");
-    let registrationsBeginDate = date.getTime()
-    useEffect(() => {
-        axios.get('/api/getTime').then((res) => {
-            setTimeLeft(res.data.registrationsBeginDate)
-        })
-    })
+    // const [timeLeft, setTimeLeft] = useState(null)
+    // const date = new Date("2023-10-16T21:00:00");
+    // let registrationsBeginDate = date.getTime()
+    // useEffect(() => {
+    //     axios.get('/api/getTime').then((res) => {
+    //         setTimeLeft(res.data.registrationsBeginDate)
+    //     })
+    // })
     return (
         // <div className="h-fit md:py-5">
         //     {
@@ -48,8 +48,9 @@ const EventCountdown = () => {
         //     }
         // </div>
         <div className="h-fit md:py-5">
+
             <Countdown
-                date={registrationsBeginDate = date.getTime()}
+                date={Date.now() + 20400000}
                 renderer={renderer}
             />
         </div>
