@@ -8,7 +8,7 @@ const PrizeCard = ({ source, index}) => {
     <div className=" h-[200px] w-[200px]"
     data-aos="zoom-in-up"
         data-aos-duration="500"
-        data-aos-delay={`${(index + 1) * 200}`}>
+        data-aos-delay={`${(index + 1) * 100}`}>
           <Image src={source} alt = {`${index + 1}`} height={800} width={800} className = ' bg-transparent'/>
         </div>
   )
