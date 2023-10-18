@@ -6,127 +6,131 @@ import { whitepeslogo, whitelogo } from "@/public/Kodikon3";
 import Image from "next/image";
 
 export const NavbarKodikon3 = () => {
-    const ref = useRef(null);
-    const [isIntersecting, setIntersecting] = useState(true);
-    const [navbar, setNavbar] = useState(false)
+  const ref = useRef(null);
+  const [isIntersecting, setIntersecting] = useState(true);
+  const [navbar, setNavbar] = useState(false);
 
-    useEffect(() => {
-        if (!ref.current) return;
-        const observer = new IntersectionObserver(([entry]) =>
-            setIntersecting(entry.isIntersecting),
-        );
-
-        observer.observe(ref.current);
-        return () => observer.disconnect();
-    }, []);
-
-    return (
-        <>
-        <nav
-            className={` fixed inset-x-0 top-0 z-50 backdrop-blur  duration-200  py-4 border-b-2  ${isIntersecting
-                ? "bg-zinc-900/0 border-zinc-900"
-                : "bg-zinc-900/500  border-zinc-800 "
-                }`} ref={ref}
-        >
-            <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
-                <div>
-                    <div className="flex items-center justify-between py-3 md:py-5 md:block">
-                        {/* {D:\Embrione PES\Kodikon 3.0\embrionepes.com\public\Kodikon3} */}
-                        <div className="flex flex-row">
-                            <a href="/" className="flex items-center h-10">
-                                {/* <img src={whitepeslogo} className="h-8 mr-3 text-white" alt="PES" /> */}
-                                <Image 
-                                    src={whitepeslogo}
-                                    className="w-[100px]"
-                                    alt=""
-                                />
-                            </a>
-                            <a href="/" className="hidden md:flex items-center h-10 ">
-                                {/* <img src={whitepeslogo} className="h-8 mr-3 text-white" alt="PES" /> */}
-                                <Image 
-                                    src={whitelogo}
-                                    className="md:w-[100px] w-[100px]"
-                                    alt=""
-                                />
-                            </a>
-                        </div>
-                        <div className="md:hidden flex flex-row items-center justify-center w-fit space-x-5">
-                            <button className="text-white bg-white p-3 rounded-lg bg-opacity-25 h-fit w-fit  text-sm md:text-xl" >
-                                Register!
-                            </button>
-                            <button
-                                className={`p-2 text-gray-700 rounded-md outline-none focus:border-gray-400 transition ease-in-out duration-100 ${navbar && 'animate-bounce'} ${!navbar && 'animate-pulse'}`}
-                                onClick={() => setNavbar(!navbar)}
-                            >
-                                {navbar ? (
-                                    <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        className="w-6 h-6 text-white"
-                                        viewBox="0 0 20 20"
-                                        fill="currentColor"
-                                    >
-                                        <path
-                                            fillRule="evenodd"
-                                            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-                                            clipRule="evenodd"
-                                        />
-                                    </svg>
-                                ) : (
-                                    <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        className="w-6 h-6 text-white"
-                                        fill="none"
-                                        viewBox="0 0 24 24"
-                                        stroke="currentColor"
-
-                                    >
-                                        <path
-                                            strokeLinecap="round"
-                                            strokeLinejoin="round"
-                                            d="M4 6h16M4 12h16M4 18h16"
-                                        />
-                                    </svg>
-                                )}
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div
-                        className={`flex-1 justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0 ${navbar ? "block" : "hidden"
-                            }`}
-                    >
-                        <ul className="items-center justify-center space-y-8 md:flex md:space-x-3 lg:space-x-6 md:space-y-0">
-                            <li className="text-white text-xs lg:text-[16px]">
-                                <Link href="/kodikon-3/#about">About</Link>
-                            </li>
-                            <li className="text-white text-xs lg:text-[16px]">
-                                <Link href="/kodikon-3/#theme">Themes</Link>
-                            </li>
-                            <li className="text-white text-xs lg:text-[16px]">
-                                <Link href="/kodikon-3/#timeline">Timeline</Link>
-                            </li>
-                            <li className="text-white text-xs lg:text-[16px]">
-                                <Link href="/kodikon-3/#sponser">Sponsers</Link>
-                            </li>
-                            <li className="text-white text-xs lg:text-[16px]">
-                                <Link href="/kodikon-3/#faq">FAQ</Link>
-                            </li>
-                            <li className="text-white text-xs lg:text-[16px]">
-                                <Link href="/#contact">Contact Us</Link>
-                            </li>
-
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </nav>
-        </>
+  useEffect(() => {
+    if (!ref.current) return;
+    const observer = new IntersectionObserver(([entry]) =>
+      setIntersecting(entry.isIntersecting)
     );
+
+    observer.observe(ref.current);
+    return () => observer.disconnect();
+  }, []);
+
+  return (
+    <>
+      <nav
+        className={` fixed inset-x-0 top-0 z-50 backdrop-blur  duration-200  py-4 border-b-2  ${
+          isIntersecting
+            ? "bg-zinc-900/0 border-zinc-900"
+            : "bg-zinc-900/500  border-zinc-800 "
+        }`}
+        ref={ref}
+      >
+        <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
+          <div>
+            <div className="flex items-center justify-between py-3 md:py-5 md:block">
+              {/* {D:\Embrione PES\Kodikon 3.0\embrionepes.com\public\Kodikon3} */}
+              <div className="flex flex-row">
+                <a href="/" className="flex items-center h-10">
+                  {/* <img src={whitepeslogo} className="h-8 mr-3 text-white" alt="PES" /> */}
+                  <Image src={whitepeslogo} className="w-[100px]" alt="" />
+                </a>
+                <a href="/" className="hidden md:flex items-center h-10 ">
+                  {/* <img src={whitepeslogo} className="h-8 mr-3 text-white" alt="PES" /> */}
+                  <Image
+                    src={whitelogo}
+                    className="md:w-[100px] w-[100px]"
+                    alt=""
+                  />
+                </a>
+              </div>
+              <div className="md:hidden flex flex-row items-center justify-center w-fit space-x-5">
+                <a
+                  href="https://hack2skill.com/hack/kodikon3?utm_source=poster&utm_medium=campaign"
+                  className="hidden md:flex items-center h-10 "
+                >
+                  <button className="text-white bg-white p-3 rounded-lg bg-opacity-25 h-fit w-fit  text-sm md:text-xl">
+                    Register!
+                  </button>
+                </a>
+                <button
+                  className={`p-2 text-gray-700 rounded-md outline-none focus:border-gray-400 transition ease-in-out duration-100 ${
+                    navbar && "animate-bounce"
+                  } ${!navbar && "animate-pulse"}`}
+                  onClick={() => setNavbar(!navbar)}
+                >
+                  {navbar ? (
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="w-6 h-6 text-white"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                        clipRule="evenodd"
+                      />
+                    </svg>
+                  ) : (
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="w-6 h-6 text-white"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M4 6h16M4 12h16M4 18h16"
+                      />
+                    </svg>
+                  )}
+                </button>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div
+              className={`flex-1 justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0 ${
+                navbar ? "block" : "hidden"
+              }`}
+            >
+              <ul className="items-center justify-center space-y-8 md:flex md:space-x-3 lg:space-x-6 md:space-y-0">
+                <li className="text-white text-xs lg:text-[16px]">
+                  <Link href="/kodikon-3/#about">About</Link>
+                </li>
+                <li className="text-white text-xs lg:text-[16px]">
+                  <Link href="/kodikon-3/#theme">Themes</Link>
+                </li>
+                <li className="text-white text-xs lg:text-[16px]">
+                  <Link href="/kodikon-3/#timeline">Timeline</Link>
+                </li>
+                <li className="text-white text-xs lg:text-[16px]">
+                  <Link href="/kodikon-3/#sponser">Sponsers</Link>
+                </li>
+                <li className="text-white text-xs lg:text-[16px]">
+                  <Link href="/kodikon-3/#faq">FAQ</Link>
+                </li>
+                <li className="text-white text-xs lg:text-[16px]">
+                  <Link href="/#contact">Contact Us</Link>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </>
+  );
 };
 
-
-{/* <nav className={`fixed inset-x-0 top-0 z-50 backdrop-blur  duration-200 border-b  ${isIntersecting
+{
+  /* <nav className={`fixed inset-x-0 top-0 z-50 backdrop-blur  duration-200 border-b  ${isIntersecting
                         ? "bg-zinc-900/0 border-transparent"
                         : "bg-zinc-900/500  border-zinc-800 "
                     }`} ref={ref}>
@@ -161,4 +165,5 @@ export const NavbarKodikon3 = () => {
       </ul>
     </div>
   </div>
-</nav> */}
+</nav> */
+}
