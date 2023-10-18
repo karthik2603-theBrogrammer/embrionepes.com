@@ -21,7 +21,7 @@ const HeroComponent = () => {
 
         </div>
         <div className='flex flex-col items-center'>
-          <div className='absolute md:relative my-auto bottom-32 md:bottom-0 px-2'>
+          <div className='absolute md:relative my-auto bottom-32 md:bottom-0 px-2 z-200'>
             <Image
               src={copyofcopy}
               alt="Kodikon 3.0"
@@ -53,7 +53,7 @@ const HeroComponent = () => {
             </div>
           </div> */}
         </div>
-        <div className=''>
+        <div className='relative -z-300'>
           <Image
             src={rightguy}
             alt=""
