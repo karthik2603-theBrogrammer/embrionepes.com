@@ -170,6 +170,16 @@ export const domainDetails = [
     ],
   },
   {
+    domainName: "Web Development",
+    headsAndPhotos: [
+      {
+        domainHead: "Karthik Namboori",
+        domainHeadPhoto: "/current-domain-heads/karthik_delhi.png",
+        linkedInURL: "https://in.linkedin.com/in/karthik-namboori-145238216",
+      },
+    ],
+  },
+  {
     domainName: "Design",
     headsAndPhotos: [
       {
