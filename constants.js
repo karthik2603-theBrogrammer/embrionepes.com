@@ -98,16 +98,31 @@ export const domainDetails = [
     ],
   },
   {
+    domainName: "Club Head",
+    headsAndPhotos: [
+      {
+        domainHead: "Gagan HR",
+        domainHeadPhoto: "/current-domain-heads/gagan-h-r.png",
+        linkedInURL: "https://www.linkedin.com/in/gaganhr",
+      },
+      {
+        domainHead: "Anvesha Nayak",
+        domainHeadPhoto: "/current-domain-heads/anvesha-nayak.png",
+        linkedInURL: "https://www.linkedin.com/in/anveshanayak",
+      },
+    ],
+  },
+  {
     domainName: "Logistics",
     headsAndPhotos: [
       {
-        domainHead: "Naresh Srinivas",
-        domainHeadPhoto: "/domiainHeadPhotos/naresh.jpg",
+        domainHead: "Shobith",
+        domainHeadPhoto: "/current-domain-heads/shobith.png",
         linkedInURL: "https://www.linkedin.com/in/naresh-srinivas-28a608215/",
       },
       {
-        domainHead: "Chaitra Upadhya",
-        domainHeadPhoto: "/domiainHeadPhotos/chaitra.jpeg",
+        domainHead: "Thanush J Lodha",
+        domainHeadPhoto: "/current-domain-heads/thanush-j-lodha.png",
         linkedInURL: "https://www.linkedin.com/in/chaitra-upadhya-922426211/",
       },
     ],
@@ -116,9 +131,14 @@ export const domainDetails = [
     domainName: "Event Management",
     headsAndPhotos: [
       {
-        domainHead: "Punarv Dinakar",
-        domainHeadPhoto: "/domiainHeadPhotos/punarv.jpeg",
-        linkedInURL: "goto-linkedin",
+        domainHead: "Khushi Patil",
+        domainHeadPhoto: "/current-domain-heads/khushi-patil.png",
+        linkedInURL: "https://www.linkedin.com/in/khushi-patil-8546b1236",
+      },
+      {
+        domainHead: "Vidhul",
+        domainHeadPhoto: "/current-domain-heads/vidhul.png",
+        linkedInURL: "",
       },
     ],
   },
@@ -126,10 +146,10 @@ export const domainDetails = [
     domainName: "Marketing and Sponsorship",
     headsAndPhotos: [
       {
-        domainHead: "Swikrit Laxmishekhar",
-        domainHeadPhoto: "/domiainHeadPhotos/swikrit.jpg",
+        domainHead: "Krishna Sudarshan",
+        domainHeadPhoto: "/current-domain-heads/krishna-sudarshan.png",
         linkedInURL:
-          "https://www.linkedin.com/in/swikrit-laxmishekhar-546878225/",
+          "",
       },
     ],
   },
@@ -137,9 +157,15 @@ export const domainDetails = [
     domainName: "Hospitality",
     headsAndPhotos: [
       {
-        domainHead: "Rhea Sudheer",
-        domainHeadPhoto: "/domiainHeadPhotos/rhea.jpg",
-        linkedInURL: "https://www.linkedin.com/in/rhea-sudheer/",
+        domainHead: "Shreya Palavalli",
+        domainHeadPhoto: "/current-domain-heads/shreya-palavalli.png",
+        linkedInURL: "https://www.linkedin.com/in/shreya-palavalli-85175224a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      },
+      {
+        domainHead: "Trisha Songra",
+        domainHeadPhoto: "/current-domain-heads/trisha-songra.png",
+        linkedInURL:
+          "",
       },
     ],
   },
@@ -147,9 +173,9 @@ export const domainDetails = [
     domainName: "Design",
     headsAndPhotos: [
       {
-        domainHead: "Yogitha H K",
-        domainHeadPhoto: "/domiainHeadPhotos/yogitha.jpg",
-        linkedInURL: "https://www.linkedin.com/in/yogitha-h-k-63bb74222/",
+        domainHead: "Kousthubha GK",
+        domainHeadPhoto: "/current-domain-heads/kousthubha-gk.png",
+        linkedInURL: "",
       },
     ],
   },
@@ -157,9 +183,24 @@ export const domainDetails = [
     domainName: "Operations",
     headsAndPhotos: [
       {
-        domainHead: "Harsh Verma",
-        domainHeadPhoto: "/domiainHeadPhotos/harsh.jpg",
-        linkedInURL: "https://www.linkedin.com/in/harsh-verma-857b801b9/",
+        domainHead: "Arshya Khurana",
+        domainHeadPhoto: "/current-domain-heads/arshya-khurana.png",
+        linkedInURL: "",
+      },
+      {
+        domainHead: "Shikhar Jaiswal",
+        domainHeadPhoto: "/current-domain-heads/shikhar-jaiswal.png",
+        linkedInURL: "",
+      },
+    ],
+  },
+  {
+    domainName: "Public Relations",
+    headsAndPhotos: [
+      {
+        domainHead: "Pari Maheshwari",
+        domainHeadPhoto: "/current-domain-heads/pari-maheshwari.png",
+        linkedInURL: "https://www.linkedin.com/in/pari-maheshwari/",
       },
     ],
   },
