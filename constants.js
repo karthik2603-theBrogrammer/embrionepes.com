@@ -154,6 +154,16 @@ export const domainDetails = [
     ],
   },
   {
+    domainName: "Web Development",
+    headsAndPhotos: [
+      {
+        domainHead: "Karthik Namboori",
+        domainHeadPhoto: "/current-domain-heads/karthik_delhi.png",
+        linkedInURL: "https://in.linkedin.com/in/karthik-namboori-145238216",
+      },
+    ],
+  },
+  {
     domainName: "Hospitality",
     headsAndPhotos: [
       {
@@ -170,25 +180,16 @@ export const domainDetails = [
     ],
   },
   {
-    domainName: "Web Development",
+    domainName: "Public Relations",
     headsAndPhotos: [
       {
-        domainHead: "Karthik Namboori",
-        domainHeadPhoto: "/current-domain-heads/karthik_delhi.png",
-        linkedInURL: "https://in.linkedin.com/in/karthik-namboori-145238216",
+        domainHead: "Pari Maheshwari",
+        domainHeadPhoto: "/current-domain-heads/pari-maheshwari.png",
+        linkedInURL: "https://www.linkedin.com/in/pari-maheshwari/",
       },
     ],
   },
-  {
-    domainName: "Design",
-    headsAndPhotos: [
-      {
-        domainHead: "Kousthubha GK",
-        domainHeadPhoto: "/current-domain-heads/kousthubha-gk.png",
-        linkedInURL: "",
-      },
-    ],
-  },
+  
   {
     domainName: "Operations",
     headsAndPhotos: [
@@ -204,13 +205,14 @@ export const domainDetails = [
       },
     ],
   },
+  
   {
-    domainName: "Public Relations",
+    domainName: "Design",
     headsAndPhotos: [
       {
-        domainHead: "Pari Maheshwari",
-        domainHeadPhoto: "/current-domain-heads/pari-maheshwari.png",
-        linkedInURL: "https://www.linkedin.com/in/pari-maheshwari/",
+        domainHead: "Kousthubha GK",
+        domainHeadPhoto: "/current-domain-heads/kousthubha-gk.png",
+        linkedInURL: "",
       },
     ],
   },
