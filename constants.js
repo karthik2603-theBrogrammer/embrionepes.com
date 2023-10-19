@@ -118,12 +118,12 @@ export const domainDetails = [
       {
         domainHead: "Shobith",
         domainHeadPhoto: "/current-domain-heads/shobith.png",
-        linkedInURL: "https://www.linkedin.com/in/naresh-srinivas-28a608215/",
+        linkedInURL: "",
       },
       {
         domainHead: "Thanush J Lodha",
         domainHeadPhoto: "/current-domain-heads/thanush-j-lodha.png",
-        linkedInURL: "https://www.linkedin.com/in/chaitra-upadhya-922426211/",
+        linkedInURL: "",
       },
     ],
   },
