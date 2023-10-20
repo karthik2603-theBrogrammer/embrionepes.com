@@ -27,6 +27,7 @@ const PastEvents = () => {
       <div className="flex flex-row flex-wrap h-fit w-[100%] items-center justify-center my-5 space-x-4  flex-1">
         {ClubEvents?.map((clubEvent, index) => (
           <div
+          key={index}
             data-aos="zoom-in"
             data-aos-duration="500"
             data-aos-delay={(index + 1) * 300}

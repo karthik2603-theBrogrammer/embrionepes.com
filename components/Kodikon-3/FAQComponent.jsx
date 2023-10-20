@@ -64,10 +64,11 @@ const FAQ = () => {
     <div className="flex flex-col w-full h-fit gap-6" id="faq">
       <TitleComponent titleData={"FAQ"} />
       <div className="flex flex-col gap-3 divide-y-2 divide-dashed px-2 pt-5 md:px-0 text-white">
-        {faqData.map((ele) => {
+        {faqData.map((ele, index) => {
           return (
-            <>
+            <div key={index}>
               <div
+
                 className=" flex w-[100%] justify-between items-center text-xl md:text-2xl px-10 pt-3 cursor-pointer "
                 onClick={() => toggleOpen(ele.id)}
               >
@@ -80,7 +81,7 @@ const FAQ = () => {
                   {">>"} {displayedAnswer[ele.id]}
                 </div>
               )}
-            </>
+            </div>
           );
         })}
       </div>
