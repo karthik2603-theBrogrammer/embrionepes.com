@@ -8,7 +8,7 @@ const renderer = ({ days, hours, minutes, seconds, completed }) => {
 
     if (completed) {
         return (
-            <div className="h-fit my-32 px-2">
+            <div className="h-fit my-4 md:my-32 px-2">
                 <h1 className="text-white text-5xl md:text-6xl lg:text-8xl text-center">
                     <span className="gradient-text-animation">Kodikon 3.0</span> Registration Open!
                 </h1>
