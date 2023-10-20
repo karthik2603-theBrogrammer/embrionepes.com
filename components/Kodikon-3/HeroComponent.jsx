@@ -10,7 +10,7 @@ const HeroComponent = () => {
   return (
     <>
       <div className='relative md:top-24 md:h-[100vh]  md:w-[100vw]  mt-9 flex flex-row items-center justify-between'>
-        <div className=''>
+        <div className='relative top-[2px]'>
           <Image
             src={leftguy}
             alt=""
