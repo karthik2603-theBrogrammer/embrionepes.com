@@ -99,25 +99,24 @@ export const NavbarKodikon3 = () => {
                                 }`}
                         >
                             <ul className="items-center justify-center space-y-8 md:flex md:space-x-3 lg:space-x-6 md:space-y-0">
-                                <li className="text-white text-xs lg:text-[16px]">
-                                    <Link href="/kodikon-3/#about">About</Link>
-                                </li>
-                                <li className="text-white text-xs lg:text-[16px]">
-                                    <Link href="/kodikon-3/#theme">Themes</Link>
-                                </li>
-                                <li className="text-white text-xs lg:text-[16px]">
-                                    <Link href="/kodikon-3/#timeline">Timeline</Link>
-                                </li>
-                                <li className="text-white text-xs lg:text-[16px]">
-                                    <Link href="/kodikon-3/#sponser">Sponsers</Link>
-                                </li>
-                                <li className="text-white text-xs lg:text-[16px]">
-                                    <Link href="/kodikon-3/#faq">FAQ</Link>
-                                </li>
-                                <li className="text-white text-xs lg:text-[16px]">
-                                    <Link href="/#contact">Contact Us</Link>
-                                </li>
-
+                            <li className="text-white text-xs lg:text-[16px]">
+                                <Link href="/kodikon-3/#about" onClick={() => setNavbar(false)}>About</Link>
+                            </li>
+                            <li className="text-white text-xs lg:text-[16px]">
+                                <Link href="/kodikon-3/#theme" onClick={() => setNavbar(false)}>Themes</Link>
+                            </li>
+                            <li className="text-white text-xs lg:text-[16px]">
+                                <Link href="/kodikon-3/#timeline" onClick={() => setNavbar(false)}>Timeline</Link>
+                            </li>
+                            <li className="text-white text-xs lg:text-[16px]">
+                                <Link href="/kodikon-3/#sponser" onClick={() => setNavbar(false)}>Sponsers</Link>
+                            </li>
+                            <li className="text-white text-xs lg:text-[16px]">
+                                <Link href="/kodikon-3/#faq" onClick={() => setNavbar(false)}>FAQ</Link>
+                            </li>
+                            <li className="text-white text-xs lg:text-[16px]">
+                                <Link href="/#contact">Contact Us</Link>
+                            </li>
                             </ul>
                         </div>
                     </div>

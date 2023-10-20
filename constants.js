@@ -276,6 +276,16 @@ export const ClubEvents = [
 
 export const announcements = [
   {
+    announcementName: "Kodikon 3.0 Registrations open!",
+    announcementDescription:
+      "Registrations for Kodikon 3.0, the third edition of our 24-hour highly successful flagship national-level hackathon, are open now to all engineering undergraduates across the nation.",
+    formLink: "https://hack2skill.com/hack/kodikon3",
+    formLinkStatus: "Open",
+    dateOfEntry: 1697800443939,
+    postedBy: "Karthik Namboori",
+    postedByDomain: "WebDev Domain",
+  },
+  {
     announcementName: "Kodikon 3.0",
     announcementDescription:
       "The most awaited hackathon of PES University is here, only this time, BIGGER! The 24 hour National Hackathon, Kodikon 3.0,  is coming. Stay Tuned, for more!!",
