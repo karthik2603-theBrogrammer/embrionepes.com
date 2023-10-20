@@ -279,8 +279,8 @@ export const announcements = [
     announcementName: "Kodikon 3.0",
     announcementDescription:
       "The most awaited hackathon of PES University is here, only this time, BIGGER! The 24 hour National Hackathon, Kodikon 3.0,  is coming. Stay Tuned, for more!!",
-    formLink: "",
-    formLinkStatus: "Soon",
+    formLink: "https://hack2skill.com/hack/kodikon3",
+    formLinkStatus: "Open",
     dateOfEntry: 1690869081967,
     postedBy: "Karthik Namboori",
     postedByDomain: "WebDev Domain",
