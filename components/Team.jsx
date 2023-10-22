@@ -24,6 +24,7 @@ const Team = () => {
       <div className=" md:grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  flex flex-col items-center justify-center  ">
         {domainDetails?.map((domain, index) => (
           <DomainComponent
+            key={index}
             index={index}
             domainName={domain?.domainName}
             headsAndPhotos={domain?.headsAndPhotos}

@@ -16,7 +16,7 @@ export default async function handler(req, res) {
 
   const { fullName, emailID, subject, message } = req.body;
   const mailOptions = {
-    to: "namkarthik2003@gmail.com", //The Embrione Mail comes here.
+    to: "embrione_cse@pes.edu", //The Embrione Mail comes here.
     subject: `${subject}`,
     text: `Message from ${fullName}. Embrione can reach back to him/her at ${emailID}\n\n${message}`,
   };
