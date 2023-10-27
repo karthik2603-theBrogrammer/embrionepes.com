@@ -393,7 +393,7 @@ export const sponsors = [
     categorySponsors: [
       {
         name: "1password",
-        imageUrl: "/sponsors/one-password.png",
+        imageUrl: "/sponsors/1Password.png",
         sponsorWebsiteURL:""
       },
       {
@@ -410,9 +410,51 @@ export const sponsors = [
         name: "Wolfram",
         imageUrl: "/sponsors/wolfram.png",
         sponsorWebsiteURL:""
+      },
+      {
+        name: "orielly",
+        imageUrl: "/sponsors/TechPartners/orielly.png",
+        sponsorWebsiteURL: ""
       }
     ],
   },
+
+  {
+    category: "Food Sponsors",
+    categorySponsors: [
+      {
+        name: "brownburger",
+        imageUrl: "/sponsors/FoodPartners/brownburger.png",
+        sponsorWebsiteURL:""
+      },
+      {
+        name: "creambell",
+        imageUrl: "/sponsors/FoodPartners/frozenbottle.png",
+        sponsorWebsiteURL:""
+      },
+      {
+        name: "echo3D",
+        imageUrl: "/sponsors/FoodPartners/creambell.png",
+        sponsorWebsiteURL:""
+      },
+      {
+        name: "Wolfram",
+        imageUrl: "/sponsors/FoodPartners/glens.png",
+        sponsorWebsiteURL:""
+      }
+    ],
+  },
+
+  {
+    category: "Travel Partners",
+    categorySponsors: [
+      {
+        name: "EaseMyTrip-Logo",
+        imageUrl: "/sponsors/TravelPartners/EaseMyTrip-Logo.jpg",
+        sponsorWebsiteURL:""
+      }
+    ],
+  }
   // {
   //   category: "Category2",
   //   categorySponsors: [
